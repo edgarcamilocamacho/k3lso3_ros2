@@ -1,4 +1,0 @@
-Invoking command in '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_cpp': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_cpp -- -j12 -l12
-Invoked command in '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_cpp -- -j12 -l12
-Invoking command in '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_cpp': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_cpp
-Invoked command in '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_cpp

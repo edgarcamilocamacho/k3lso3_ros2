@@ -1,4 +1,0 @@
-source;share/test_perf_cpp/local_setup.bash
-source;share/test_perf_cpp/local_setup.dsv
-source;share/test_perf_cpp/local_setup.sh
-source;share/test_perf_cpp/local_setup.zsh

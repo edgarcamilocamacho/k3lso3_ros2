@@ -21,9 +21,9 @@
 #include "rt/rt_vectornav.h"
 // #include "vectornav_lcmt.hpp"
 
-#define K_MINI_CHEETAH_VECTOR_NAV_SERIAL "/dev/ttyS0"
+#define K_MINI_CHEETAH_VECTOR_NAV_SERIAL "/dev/ttyUSB0"
 
-//#define PRINT_VECTORNAV_DEBUG
+#define PRINT_VECTORNAV_DEBUG
 
 int processErrorReceived(const std::string& errorMessage, VnError errorCode);
 void vectornav_handler(void* userData, VnUartPacket* packet,
@@ -134,7 +134,7 @@ bool init_vectornav() {
     return false;
   }
   strFromHeadingMode(strConversions, (VnHeadingMode)vpeReg.headingMode);
-  printf("[rt_vectornav] Sensor now id mode: %s\n", strConversions);
+  printf("[rt_vectornav] Sensor now in mode: %s\n", strConversions);
 
   if ((error = VnSensor_readImuFilteringConfiguration(&(vn.vs), &filtReg)) !=
       E_NONE) {
@@ -153,7 +153,7 @@ bool init_vectornav() {
   // setup binary output message type
   BinaryOutputRegister_initialize(
       &(vn.bor), ASYNCMODE_PORT2,
-      4,  // divisor:  output frequency = 800/divisor
+      16,  // divisor:  output frequency = 800/divisor
       (CommonGroup)(COMMONGROUP_QUATERNION | COMMONGROUP_ANGULARRATE |
                     COMMONGROUP_ACCEL),
       TIMEGROUP_NONE, IMUGROUP_NONE, GPSGROUP_NONE, ATTITUDEGROUP_NONE,
@@ -185,6 +185,10 @@ void vectornav_handler(void* userData, VnUartPacket* packet,
   vec4f quat;
   vec3f omega;
   vec3f a;
+
+  #ifdef PRINT_VECTORNAV_DEBUG
+  printf("callback!\n");
+  #endif
 
   if (VnUartPacket_type(packet) != PACKETTYPE_BINARY) {
     printf("[vectornav_handler] got a packet that wasn't binary.\n");
@@ -234,8 +238,18 @@ void vectornav_handler(void* userData, VnUartPacket* packet,
   imu_publisher->publish(imu_msg);
 
   // TF
-  auto tf_msg = geometry_msgs::msg::TransformStamped();
-  
+  // auto tf_msg = geometry_msgs::msg::TransformStamped();
+  // tf_msg.header.frame_id = "base_link";
+  // tf_msg.header.stamp = rclcpp::Clock().now();
+  // tf_msg.child_frame_id = "vectornav";
+  // tf_msg.transform.translation.x = 0.0;
+  // tf_msg.transform.translation.y = 0.0;
+  // tf_msg.transform.translation.z = 0.0;
+  // tf_msg.transform.rotation.x = quat.c[0];
+  // tf_msg.transform.rotation.y = quat.c[1];
+  // tf_msg.transform.rotation.z = quat.c[2];
+  // tf_msg.transform.rotation.w = quat.c[3];
+  // tf_broadcaster->sendTransform(tf_msg);
 
 #ifdef PRINT_VECTORNAV_DEBUG
   char strConversions[50];

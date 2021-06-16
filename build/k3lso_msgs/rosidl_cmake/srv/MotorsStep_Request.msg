@@ -1,1 +1,0 @@
-k3lso_msgs/MotorsCommand motors_command
