@@ -1,0 +1,346 @@
+-- The C compiler identification is GNU 9.3.0
+-- The CXX compiler identification is GNU 9.3.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.5", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found rclcpp: 2.3.1 (/opt/ros/foxy/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+-- Found FastRTPS: /opt/ros/foxy/include  
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found sensor_msgs: 2.0.4 (/opt/ros/foxy/share/sensor_msgs/cmake)
+-- Found tf2: 0.13.10 (/opt/ros/foxy/share/tf2/cmake)
+-- Found tf2_msgs: 0.13.10 (/opt/ros/foxy/share/tf2_msgs/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/k3lso_vectornav
+[35m[1mScanning dependencies of target k3lso_vectornav[0m
+[  7%] [32mBuilding CXX object CMakeFiles/k3lso_vectornav.dir/src/rt/rt_vectornav.cpp.o[0m
+[  7%] [32mBuilding CXX object CMakeFiles/k3lso_vectornav.dir/src/k3lso_vectornav_node.cpp.o[0m
+[ 11%] [32mBuilding C object CMakeFiles/k3lso_vectornav.dir/src/vn/error_detection.c.o[0m
+[ 19%] [32mBuilding C object CMakeFiles/k3lso_vectornav.dir/src/vn/protocol/spi.c.o[0m
+[ 23%] [32mBuilding C object CMakeFiles/k3lso_vectornav.dir/src/vn/conv.c.o[0m
+[ 19%] [32mBuilding C object CMakeFiles/k3lso_vectornav.dir/src/vn/error.c.o[0m
+[ 26%] [32mBuilding C object CMakeFiles/k3lso_vectornav.dir/src/vn/math/vector.c.o[0m
+[ 30%] [32mBuilding C object CMakeFiles/k3lso_vectornav.dir/src/vn/math/matrix.c.o[0m
+[ 38%] [32mBuilding C object CMakeFiles/k3lso_vectornav.dir/src/vn/sensors.c.o[0m
+[ 38%] [32mBuilding C object CMakeFiles/k3lso_vectornav.dir/src/vn/protocol/upack.c.o[0m
+[ 42%] [32mBuilding C object CMakeFiles/k3lso_vectornav.dir/src/vn/protocol/upackf.c.o[0m
+[ 46%] [32mBuilding C object CMakeFiles/k3lso_vectornav.dir/src/vn/sensors/compositedata.c.o[0m
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genReadBinaryOutput1[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:1425:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 1425 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genReadBinaryOutput2[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:1440:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 1440 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genReadBinaryOutput3[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:1455:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 1455 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genCmdWriteSettings[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:1532:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 1532 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genCmdRestoreFactorySettings[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:1547:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 1547 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genCmdReset[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:1562:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 1562 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genCmdTare[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:1577:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 1577 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genCmdSetGyroBias[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:1592:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 1592 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genCmdKnownMagneticDisturbance[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:1607:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 1607 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genCmdKnownAccelerationDisturbance[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:1623:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 1623 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genReadUserTag[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:1639:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 1639 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genReadModelNumber[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:1654:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 1654 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genReadHardwareRevision[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:1669:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 1669 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genReadSerialNumber[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:1684:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 1684 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genReadFirmwareVersion[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:1699:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 1699 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genReadSerialBaudRate[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:1714:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 1714 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genReadAsyncDataOutputType[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:1729:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 1729 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genReadAsyncDataOutputFrequency[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:1744:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 1744 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genReadYawPitchRoll[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:1759:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 1759 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genReadAttitudeQuaternion[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:1774:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 1774 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genReadQuaternionMagneticAccelerationAndAngularRates[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:1789:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 1789 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genReadMagneticMeasurements[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:1804:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 1804 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genReadAccelerationMeasurements[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:1819:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 1819 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genReadAngularRateMeasurements[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:1834:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 1834 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genReadMagneticAccelerationAndAngularRates[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:1849:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 1849 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genReadMagneticAndGravityReferenceVectors[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:1864:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 1864 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genReadMagnetometerCompensation[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:1879:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 1879 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genReadAccelerationCompensation[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:1894:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 1894 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genReadReferenceFrameRotation[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:1909:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 1909 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genReadYawPitchRollMagneticAccelerationAndAngularRates[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:1924:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 1924 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genReadCommunicationProtocolControl[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:1939:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 1939 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genReadSynchronizationControl[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:1954:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 1954 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genReadSynchronizationStatus[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:1969:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 1969 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genReadVpeBasicControl[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:1984:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 1984 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genReadVpeMagnetometerBasicTuning[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:1999:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 1999 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genReadVpeAccelerometerBasicTuning[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:2014:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 2014 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genReadMagnetometerCalibrationControl[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:2029:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 2029 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genReadCalculatedMagnetometerCalibration[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:2044:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 2044 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genReadVelocityCompensationMeasurement[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:2059:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 2059 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genReadVelocityCompensationControl[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:2074:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 2074 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genReadImuMeasurements[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:2089:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 2089 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genReadGpsConfiguration[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:2104:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 2104 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genReadGpsAntennaOffset[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:2119:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 2119 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genReadGpsSolutionLla[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:2134:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 2134 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genReadGpsSolutionEcef[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:2149:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 2149 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genReadInsSolutionLla[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:2164:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 2164 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genReadInsSolutionEcef[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:2179:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 2179 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genReadInsBasicConfiguration[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:2194:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 2194 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genReadInsStateLla[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:2209:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 2209 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genReadInsStateEcef[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:2224:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 2224 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genReadStartupFilterBiasEstimate[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:2239:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 2239 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genReadDeltaThetaAndDeltaVelocity[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:2254:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 2254 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genReadDeltaThetaAndDeltaVelocityConfiguration[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:2269:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 2269 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genReadReferenceVectorConfiguration[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:2284:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 2284 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genReadGyroCompensation[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:2299:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 2299 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genReadImuFilteringConfiguration[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:2314:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 2314 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genReadGpsCompassBaseline[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:2329:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 2329 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genReadGpsCompassEstimatedBaseline[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:2344:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 2344 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genReadYawPitchRollTrueBodyAccelerationAndAngularRates[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:2359:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 2359 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genReadYawPitchRollTrueInertialAccelerationAndAngularRates[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:2374:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 2374 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:[m[K In function ‘[01m[KVnUartPacket_genWriteBinaryOutput[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/protocol/upack.c:2389:9:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbufferSize[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 2389 |  [01;35m[Ksize_t bufferSize[m[K,
+      |  [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[ 50%] [32mBuilding C object CMakeFiles/k3lso_vectornav.dir/src/vn/sensors/ezasyncdata.c.o[0m
+[ 53%] [32mBuilding C object CMakeFiles/k3lso_vectornav.dir/src/vn/util.c.o[0m
+[ 57%] [32mBuilding C object CMakeFiles/k3lso_vectornav.dir/src/vn/sensors/searcher.c.o[0m
+[ 61%] [32mBuilding C object CMakeFiles/k3lso_vectornav.dir/src/vn/xplat/criticalsection.c.o[0m
+[ 65%] [32mBuilding C object CMakeFiles/k3lso_vectornav.dir/src/vn/xplat/event.c.o[0m
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/sensors/searcher.c:[m[K In function ‘[01m[KVnSearcher_findPorts_LINUX[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/sensors/searcher.c:371:16:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint32_t[m[K’ {aka ‘[01m[Kint[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  371 |   while (index [01;35m[K<[m[K *numPortsFound)
+      |                [01;35m[K^[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/util.c:[m[K In function ‘[01m[KVnApi_getVersion[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/util.c:41:44:[m[K [01;35m[Kwarning: [m[Kparameter ‘[01m[KoutLength[m[K’ set but not used [[01;35m[K-Wunused-but-set-parameter[m[K]
+   41 | VnError VnApi_getVersion(char *out, [01;35m[Ksize_t outLength[m[K)
+      |                                     [01;35m[K~~~~~~~^~~~~~~~~[m[K
+[ 69%] [32mBuilding C object CMakeFiles/k3lso_vectornav.dir/src/vn/xplat/serialport.c.o[0m
+[ 73%] [32mBuilding C object CMakeFiles/k3lso_vectornav.dir/src/vn/xplat/thread.c.o[0m
+[ 76%] [32mBuilding C object CMakeFiles/k3lso_vectornav.dir/src/vn/xplat/time.c.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/k3lso_vectornav.dir/src/Utilities/PeriodicTask.cpp.o[0m
+[ 84%] [32mBuilding CXX object CMakeFiles/k3lso_vectornav.dir/src/Utilities/SegfaultHandler.cpp.o[0m
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/xplat/serialport.c:[m[K In function ‘[01m[KVnSerialPort_write[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/xplat/serialport.c:518:24:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K-Wsign-compare[m[K]
+  518 |  if (numOfBytesWritten [01;35m[K==[m[K -1)
+      |                        [01;35m[K^~[m[K
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/xplat/serialport.c:[m[K In function ‘[01m[KVnSerialPort_handleSerialPortNotifications[m[K’:
+[01m[K/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav/src/vn/xplat/serialport.c:707:3:[m[K [01;35m[Kwarning: [m[Ksuggest braces around empty body in an ‘[01m[Kif[m[K’ statement [[01;35m[K-Wempty-body[m[K]
+  707 |   [01;35m[K;[m[K /* An error must have occurred. Do nothing for now. */
+      |   [01;35m[K^[m[K
+[ 88%] [32mBuilding CXX object CMakeFiles/k3lso_vectornav.dir/src/Utilities/Utilities_print.cpp.o[0m
+[ 92%] [32mBuilding CXX object CMakeFiles/k3lso_vectornav.dir/src/Utilities/filters.cpp.o[0m
+[ 96%] [32mBuilding CXX object CMakeFiles/k3lso_vectornav.dir/src/Utilities/utilities.cpp.o[0m
+[100%] [32m[1mLinking CXX executable k3lso_vectornav[0m
+[100%] Built target k3lso_vectornav
+-- Install configuration: ""
+-- Installing: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/lib/k3lso_vectornav/k3lso_vectornav
+-- Set runtime path of "/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/lib/k3lso_vectornav/k3lso_vectornav" to ""
+-- Installing: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/ament_index/resource_index/package_run_dependencies/k3lso_vectornav
+-- Installing: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/ament_index/resource_index/parent_prefix_path/k3lso_vectornav
+-- Installing: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/environment/ament_prefix_path.sh
+-- Installing: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/environment/ament_prefix_path.dsv
+-- Installing: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/environment/path.sh
+-- Installing: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/environment/path.dsv
+-- Installing: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/local_setup.bash
+-- Installing: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/local_setup.sh
+-- Installing: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/local_setup.zsh
+-- Installing: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/local_setup.dsv
+-- Installing: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/package.dsv
+-- Installing: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/ament_index/resource_index/packages/k3lso_vectornav
+-- Installing: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/cmake/k3lso_vectornavConfig.cmake
+-- Installing: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/cmake/k3lso_vectornavConfig-version.cmake
+-- Installing: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/package.xml

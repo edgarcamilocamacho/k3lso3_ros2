@@ -1,0 +1,10 @@
+/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_cpp/CMakeFiles/install/strip.dir
+/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_cpp/CMakeFiles/install/local.dir
+/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_cpp/CMakeFiles/install.dir
+/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_cpp/CMakeFiles/list_install_components.dir
+/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_cpp/CMakeFiles/rebuild_cache.dir
+/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_cpp/CMakeFiles/edit_cache.dir
+/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_cpp/CMakeFiles/test.dir
+/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_cpp/CMakeFiles/talker.dir
+/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_cpp/CMakeFiles/test_perf_cpp_uninstall.dir
+/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_cpp/CMakeFiles/uninstall.dir

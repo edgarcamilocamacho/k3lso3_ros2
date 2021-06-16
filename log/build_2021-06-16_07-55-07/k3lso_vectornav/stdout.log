@@ -1,0 +1,23 @@
+[35m[1mScanning dependencies of target k3lso_vectornav[0m
+[  3%] [32mBuilding CXX object CMakeFiles/k3lso_vectornav.dir/src/k3lso_vectornav_node.cpp.o[0m
+[  7%] [32mBuilding CXX object CMakeFiles/k3lso_vectornav.dir/src/rt/rt_vectornav.cpp.o[0m
+[ 11%] [32m[1mLinking CXX executable k3lso_vectornav[0m
+[100%] Built target k3lso_vectornav
+-- Install configuration: ""
+-- Installing: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/lib/k3lso_vectornav/k3lso_vectornav
+-- Set runtime path of "/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/lib/k3lso_vectornav/k3lso_vectornav" to ""
+-- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/ament_index/resource_index/package_run_dependencies/k3lso_vectornav
+-- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/ament_index/resource_index/parent_prefix_path/k3lso_vectornav
+-- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/environment/ament_prefix_path.sh
+-- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/environment/path.sh
+-- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/environment/path.dsv
+-- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/local_setup.bash
+-- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/local_setup.sh
+-- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/local_setup.zsh
+-- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/local_setup.dsv
+-- Installing: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/package.dsv
+-- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/ament_index/resource_index/packages/k3lso_vectornav
+-- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/cmake/k3lso_vectornavConfig.cmake
+-- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/cmake/k3lso_vectornavConfig-version.cmake
+-- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/package.xml

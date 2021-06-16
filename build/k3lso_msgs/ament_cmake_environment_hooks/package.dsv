@@ -1,0 +1,4 @@
+source;share/k3lso_msgs/local_setup.bash
+source;share/k3lso_msgs/local_setup.dsv
+source;share/k3lso_msgs/local_setup.sh
+source;share/k3lso_msgs/local_setup.zsh

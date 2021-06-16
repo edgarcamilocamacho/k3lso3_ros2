@@ -1,0 +1,51 @@
+running egg_info
+creating ../build/test_perf_py/test_perf_py.egg-info
+writing ../build/test_perf_py/test_perf_py.egg-info/PKG-INFO
+writing dependency_links to ../build/test_perf_py/test_perf_py.egg-info/dependency_links.txt
+writing entry points to ../build/test_perf_py/test_perf_py.egg-info/entry_points.txt
+writing requirements to ../build/test_perf_py/test_perf_py.egg-info/requires.txt
+writing top-level names to ../build/test_perf_py/test_perf_py.egg-info/top_level.txt
+writing manifest file '../build/test_perf_py/test_perf_py.egg-info/SOURCES.txt'
+reading manifest file '../build/test_perf_py/test_perf_py.egg-info/SOURCES.txt'
+writing manifest file '../build/test_perf_py/test_perf_py.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_py/build
+creating /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_py/build/lib
+creating /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_py/build/lib/test_perf_py
+copying test_perf_py/__init__.py -> /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_py/build/lib/test_perf_py
+copying test_perf_py/imu_pub_tim.py -> /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_py/build/lib/test_perf_py
+copying test_perf_py/motor_ser.py -> /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_py/build/lib/test_perf_py
+copying test_perf_py/motor_cli.py -> /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_py/build/lib/test_perf_py
+copying test_perf_py/imu_sub.py -> /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_py/build/lib/test_perf_py
+copying test_perf_py/imu_pub.py -> /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_py/build/lib/test_perf_py
+running install
+running install_lib
+creating /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/lib/python3.8/site-packages/test_perf_py
+copying /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_py/build/lib/test_perf_py/__init__.py -> /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/lib/python3.8/site-packages/test_perf_py
+copying /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_py/build/lib/test_perf_py/imu_pub_tim.py -> /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/lib/python3.8/site-packages/test_perf_py
+copying /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_py/build/lib/test_perf_py/motor_ser.py -> /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/lib/python3.8/site-packages/test_perf_py
+copying /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_py/build/lib/test_perf_py/motor_cli.py -> /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/lib/python3.8/site-packages/test_perf_py
+copying /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_py/build/lib/test_perf_py/imu_sub.py -> /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/lib/python3.8/site-packages/test_perf_py
+copying /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_py/build/lib/test_perf_py/imu_pub.py -> /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/lib/python3.8/site-packages/test_perf_py
+byte-compiling /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/lib/python3.8/site-packages/test_perf_py/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/lib/python3.8/site-packages/test_perf_py/imu_pub_tim.py to imu_pub_tim.cpython-38.pyc
+byte-compiling /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/lib/python3.8/site-packages/test_perf_py/motor_ser.py to motor_ser.cpython-38.pyc
+byte-compiling /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/lib/python3.8/site-packages/test_perf_py/motor_cli.py to motor_cli.cpython-38.pyc
+byte-compiling /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/lib/python3.8/site-packages/test_perf_py/imu_sub.py to imu_sub.cpython-38.pyc
+byte-compiling /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/lib/python3.8/site-packages/test_perf_py/imu_pub.py to imu_pub.cpython-38.pyc
+running install_data
+creating /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/share/ament_index
+creating /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/share/ament_index/resource_index
+creating /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/share/ament_index/resource_index/packages
+copying resource/test_perf_py -> /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/share/ament_index/resource_index/packages
+copying package.xml -> /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/share/test_perf_py
+running install_egg_info
+Copying ../build/test_perf_py/test_perf_py.egg-info to /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/lib/python3.8/site-packages/test_perf_py-0.0.0-py3.8.egg-info
+running install_scripts
+Installing imu_pub script to /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/lib/test_perf_py
+Installing imu_pub_tim script to /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/lib/test_perf_py
+Installing imu_sub script to /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/lib/test_perf_py
+Installing motor_cli script to /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/lib/test_perf_py
+Installing motor_ser script to /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/lib/test_perf_py
+writing list of installed files to '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_py/install.log'

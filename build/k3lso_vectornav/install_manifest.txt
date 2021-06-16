@@ -1,0 +1,16 @@
+/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/lib/k3lso_vectornav/k3lso_vectornav
+/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/ament_index/resource_index/package_run_dependencies/k3lso_vectornav
+/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/ament_index/resource_index/parent_prefix_path/k3lso_vectornav
+/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/environment/ament_prefix_path.sh
+/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/environment/ament_prefix_path.dsv
+/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/environment/path.sh
+/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/environment/path.dsv
+/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/local_setup.bash
+/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/local_setup.sh
+/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/local_setup.zsh
+/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/local_setup.dsv
+/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/package.dsv
+/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/ament_index/resource_index/packages/k3lso_vectornav
+/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/cmake/k3lso_vectornavConfig.cmake
+/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/cmake/k3lso_vectornavConfig-version.cmake
+/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/package.xml

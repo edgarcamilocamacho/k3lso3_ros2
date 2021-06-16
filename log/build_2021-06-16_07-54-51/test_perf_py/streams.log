@@ -1,0 +1,53 @@
+[0.267s] Invoking command in '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/test_perf_py': AMENT_PREFIX_PATH=/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs LD_LIBRARY_PATH=/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib PYTHONPATH=/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/lib/python3.8/site-packages:/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/test_perf_py build --build-base /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_py/build install --prefix /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py --record /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_py/install.log --single-version-externally-managed
+[0.511s] running egg_info
+[0.511s] creating ../build/test_perf_py/test_perf_py.egg-info
+[0.511s] writing ../build/test_perf_py/test_perf_py.egg-info/PKG-INFO
+[0.511s] writing dependency_links to ../build/test_perf_py/test_perf_py.egg-info/dependency_links.txt
+[0.512s] writing entry points to ../build/test_perf_py/test_perf_py.egg-info/entry_points.txt
+[0.512s] writing requirements to ../build/test_perf_py/test_perf_py.egg-info/requires.txt
+[0.512s] writing top-level names to ../build/test_perf_py/test_perf_py.egg-info/top_level.txt
+[0.513s] writing manifest file '../build/test_perf_py/test_perf_py.egg-info/SOURCES.txt'
+[0.547s] reading manifest file '../build/test_perf_py/test_perf_py.egg-info/SOURCES.txt'
+[0.547s] writing manifest file '../build/test_perf_py/test_perf_py.egg-info/SOURCES.txt'
+[0.547s] running build
+[0.548s] running build_py
+[0.548s] creating /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_py/build
+[0.548s] creating /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_py/build/lib
+[0.548s] creating /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_py/build/lib/test_perf_py
+[0.548s] copying test_perf_py/__init__.py -> /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_py/build/lib/test_perf_py
+[0.548s] copying test_perf_py/imu_pub_tim.py -> /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_py/build/lib/test_perf_py
+[0.548s] copying test_perf_py/motor_ser.py -> /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_py/build/lib/test_perf_py
+[0.548s] copying test_perf_py/motor_cli.py -> /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_py/build/lib/test_perf_py
+[0.549s] copying test_perf_py/imu_sub.py -> /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_py/build/lib/test_perf_py
+[0.549s] copying test_perf_py/imu_pub.py -> /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_py/build/lib/test_perf_py
+[0.549s] running install
+[0.549s] running install_lib
+[0.550s] creating /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/lib/python3.8/site-packages/test_perf_py
+[0.550s] copying /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_py/build/lib/test_perf_py/__init__.py -> /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/lib/python3.8/site-packages/test_perf_py
+[0.550s] copying /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_py/build/lib/test_perf_py/imu_pub_tim.py -> /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/lib/python3.8/site-packages/test_perf_py
+[0.551s] copying /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_py/build/lib/test_perf_py/motor_ser.py -> /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/lib/python3.8/site-packages/test_perf_py
+[0.551s] copying /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_py/build/lib/test_perf_py/motor_cli.py -> /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/lib/python3.8/site-packages/test_perf_py
+[0.551s] copying /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_py/build/lib/test_perf_py/imu_sub.py -> /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/lib/python3.8/site-packages/test_perf_py
+[0.551s] copying /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_py/build/lib/test_perf_py/imu_pub.py -> /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/lib/python3.8/site-packages/test_perf_py
+[0.551s] byte-compiling /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/lib/python3.8/site-packages/test_perf_py/__init__.py to __init__.cpython-38.pyc
+[0.552s] byte-compiling /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/lib/python3.8/site-packages/test_perf_py/imu_pub_tim.py to imu_pub_tim.cpython-38.pyc
+[0.552s] byte-compiling /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/lib/python3.8/site-packages/test_perf_py/motor_ser.py to motor_ser.cpython-38.pyc
+[0.553s] byte-compiling /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/lib/python3.8/site-packages/test_perf_py/motor_cli.py to motor_cli.cpython-38.pyc
+[0.553s] byte-compiling /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/lib/python3.8/site-packages/test_perf_py/imu_sub.py to imu_sub.cpython-38.pyc
+[0.553s] byte-compiling /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/lib/python3.8/site-packages/test_perf_py/imu_pub.py to imu_pub.cpython-38.pyc
+[0.553s] running install_data
+[0.554s] creating /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/share/ament_index
+[0.554s] creating /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/share/ament_index/resource_index
+[0.554s] creating /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/share/ament_index/resource_index/packages
+[0.554s] copying resource/test_perf_py -> /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/share/ament_index/resource_index/packages
+[0.554s] copying package.xml -> /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/share/test_perf_py
+[0.554s] running install_egg_info
+[0.556s] Copying ../build/test_perf_py/test_perf_py.egg-info to /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/lib/python3.8/site-packages/test_perf_py-0.0.0-py3.8.egg-info
+[0.557s] running install_scripts
+[0.572s] Installing imu_pub script to /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/lib/test_perf_py
+[0.573s] Installing imu_pub_tim script to /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/lib/test_perf_py
+[0.573s] Installing imu_sub script to /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/lib/test_perf_py
+[0.573s] Installing motor_cli script to /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/lib/test_perf_py
+[0.573s] Installing motor_ser script to /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/lib/test_perf_py
+[0.573s] writing list of installed files to '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_py/install.log'
+[0.594s] Invoked command in '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/test_perf_py' returned '0': AMENT_PREFIX_PATH=/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs LD_LIBRARY_PATH=/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib PYTHONPATH=/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/lib/python3.8/site-packages:/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/test_perf_py build --build-base /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_py/build install --prefix /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py --record /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_py/install.log --single-version-externally-managed

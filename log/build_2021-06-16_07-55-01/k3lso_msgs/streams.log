@@ -1,0 +1,149 @@
+[0.023s] Invoking command in '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/k3lso_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/k3lso_msgs -- -j12 -l12
+[0.080s] [  2%] Built target k3lso_msgs__cpp
+[0.084s] [ 12%] Built target k3lso_msgs__rosidl_generator_c
+[0.107s] [ 33%] Built target k3lso_msgs__rosidl_typesupport_introspection_cpp
+[0.108s] [ 33%] Built target k3lso_msgs__rosidl_typesupport_cpp
+[0.112s] [ 43%] Built target k3lso_msgs__rosidl_typesupport_introspection_c
+[0.112s] [ 53%] Built target k3lso_msgs__rosidl_typesupport_c
+[0.117s] [ 64%] Built target k3lso_msgs__rosidl_typesupport_fastrtps_cpp
+[0.149s] [ 74%] Built target k3lso_msgs__rosidl_typesupport_fastrtps_c
+[0.167s] [ 74%] Built target k3lso_msgs
+[0.187s] [ 76%] Built target k3lso_msgs__py
+[0.215s] [ 84%] Built target k3lso_msgs__python
+[0.239s] [ 89%] Built target k3lso_msgs__rosidl_typesupport_c__pyext
+[0.240s] [ 94%] Built target k3lso_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.246s] [100%] Built target k3lso_msgs__rosidl_typesupport_introspection_c__pyext
+[0.256s] Invoked command in '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/k3lso_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/k3lso_msgs -- -j12 -l12
+[0.308s] Invoking command in '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/k3lso_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/k3lso_msgs
+[0.316s] -- Install configuration: ""
+[0.317s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/ament_index/resource_index/rosidl_interfaces/k3lso_msgs
+[0.317s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs
+[0.317s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/srv
+[0.317s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/srv/detail
+[0.317s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/srv/detail/motors_step__functions.c
+[0.317s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/srv/detail/motors_step__struct.h
+[0.317s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/srv/detail/motors_step__functions.h
+[0.317s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/srv/detail/motors_step__type_support.h
+[0.317s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/srv/motors_step.h
+[0.317s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/msg
+[0.318s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/msg/detail
+[0.318s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/msg/detail/motors_command__functions.h
+[0.318s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/msg/detail/motors_command__struct.h
+[0.318s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/msg/detail/motors_command__functions.c
+[0.318s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/msg/detail/motors_command__type_support.h
+[0.318s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/msg/rosidl_generator_c__visibility_control.h
+[0.318s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/msg/motors_command.h
+[0.318s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/environment/library_path.sh
+[0.318s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/environment/library_path.dsv
+[0.318s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/lib/libk3lso_msgs__rosidl_generator_c.so
+[0.318s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs
+[0.318s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/srv
+[0.319s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/srv/detail
+[0.319s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/srv/detail/motors_step__rosidl_typesupport_fastrtps_c.h
+[0.319s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/msg
+[0.319s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/msg/detail
+[0.319s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/msg/detail/motors_command__rosidl_typesupport_fastrtps_c.h
+[0.319s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.319s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/lib/libk3lso_msgs__rosidl_typesupport_fastrtps_c.so
+[0.319s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs
+[0.319s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/srv
+[0.319s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/srv/detail
+[0.319s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/srv/detail/motors_step__rosidl_typesupport_fastrtps_cpp.hpp
+[0.320s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/srv/detail/dds_fastrtps
+[0.320s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/msg
+[0.320s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/msg/detail
+[0.320s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/msg/detail/dds_fastrtps
+[0.320s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/msg/detail/motors_command__rosidl_typesupport_fastrtps_cpp.hpp
+[0.320s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.320s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/lib/libk3lso_msgs__rosidl_typesupport_fastrtps_cpp.so
+[0.320s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs
+[0.320s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/srv
+[0.320s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/srv/detail
+[0.320s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/srv/detail/motors_step__rosidl_typesupport_introspection_c.h
+[0.320s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/srv/detail/motors_step__type_support.c
+[0.320s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/msg
+[0.320s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/msg/detail
+[0.320s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/msg/detail/motors_command__rosidl_typesupport_introspection_c.h
+[0.321s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/msg/detail/motors_command__type_support.c
+[0.321s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.321s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/lib/libk3lso_msgs__rosidl_typesupport_introspection_c.so
+[0.321s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/lib/libk3lso_msgs__rosidl_typesupport_c.so
+[0.321s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs
+[0.321s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/srv
+[0.321s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/srv/motors_step.hpp
+[0.321s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/srv/detail
+[0.321s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/srv/detail/motors_step__struct.hpp
+[0.321s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/srv/detail/motors_step__traits.hpp
+[0.321s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/srv/detail/motors_step__builder.hpp
+[0.321s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/msg
+[0.321s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/msg/detail
+[0.321s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/msg/detail/motors_command__struct.hpp
+[0.321s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/msg/detail/motors_command__builder.hpp
+[0.321s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/msg/detail/motors_command__traits.hpp
+[0.322s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/msg/motors_command.hpp
+[0.322s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs
+[0.322s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/srv
+[0.322s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/srv/detail
+[0.322s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/srv/detail/motors_step__rosidl_typesupport_introspection_cpp.hpp
+[0.322s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/srv/detail/motors_step__type_support.cpp
+[0.322s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/msg
+[0.322s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/msg/detail
+[0.322s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/msg/detail/motors_command__rosidl_typesupport_introspection_cpp.hpp
+[0.322s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/include/k3lso_msgs/msg/detail/motors_command__type_support.cpp
+[0.322s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/lib/libk3lso_msgs__rosidl_typesupport_introspection_cpp.so
+[0.322s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/lib/libk3lso_msgs__rosidl_typesupport_cpp.so
+[0.322s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/environment/pythonpath.sh
+[0.322s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/environment/pythonpath.dsv
+[0.322s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/lib/python3.8/site-packages/k3lso_msgs/__init__.py
+[0.351s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/lib/python3.8/site-packages/k3lso_msgs/msg
+[0.351s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/lib/python3.8/site-packages/k3lso_msgs/msg/__init__.py
+[0.351s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/lib/python3.8/site-packages/k3lso_msgs/msg/_motors_command_s.c
+[0.351s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/lib/python3.8/site-packages/k3lso_msgs/msg/_motors_command.py
+[0.351s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/lib/python3.8/site-packages/k3lso_msgs/srv
+[0.352s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/lib/python3.8/site-packages/k3lso_msgs/srv/__init__.py
+[0.352s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/lib/python3.8/site-packages/k3lso_msgs/srv/_motors_step_s.c
+[0.352s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/lib/python3.8/site-packages/k3lso_msgs/srv/_motors_step.py
+[0.352s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/lib/python3.8/site-packages/k3lso_msgs/k3lso_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[0.352s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/lib/python3.8/site-packages/k3lso_msgs/k3lso_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[0.352s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/lib/python3.8/site-packages/k3lso_msgs/k3lso_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[0.353s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/lib/libk3lso_msgs__python.so
+[0.353s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/msg/MotorsCommand.idl
+[0.353s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/srv/MotorsStep.idl
+[0.353s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/msg/MotorsCommand.msg
+[0.353s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/srv/MotorsStep.srv
+[0.353s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/srv/MotorsStep_Request.msg
+[0.354s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/srv/MotorsStep_Response.msg
+[0.354s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/ament_index/resource_index/package_run_dependencies/k3lso_msgs
+[0.354s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/ament_index/resource_index/parent_prefix_path/k3lso_msgs
+[0.354s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/environment/ament_prefix_path.sh
+[0.354s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/environment/ament_prefix_path.dsv
+[0.354s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/environment/path.sh
+[0.354s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/environment/path.dsv
+[0.354s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/local_setup.bash
+[0.354s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/local_setup.sh
+[0.354s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/local_setup.zsh
+[0.354s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/local_setup.dsv
+[0.354s] -- Installing: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/package.dsv
+[0.354s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/ament_index/resource_index/packages/k3lso_msgs
+[0.355s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/cmake/k3lso_msgs__rosidl_generator_cExport.cmake
+[0.355s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/cmake/k3lso_msgs__rosidl_generator_cExport-noconfig.cmake
+[0.355s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/cmake/k3lso_msgs__rosidl_typesupport_introspection_cExport.cmake
+[0.355s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/cmake/k3lso_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[0.355s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/cmake/k3lso_msgs__rosidl_typesupport_cExport.cmake
+[0.355s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/cmake/k3lso_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[0.355s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/cmake/k3lso_msgs__rosidl_generator_cppExport.cmake
+[0.355s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/cmake/k3lso_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[0.355s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/cmake/k3lso_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[0.355s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/cmake/k3lso_msgs__rosidl_typesupport_cppExport.cmake
+[0.355s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/cmake/k3lso_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[0.355s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/cmake/rosidl_cmake-extras.cmake
+[0.356s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.356s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[0.356s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[0.356s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.356s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.356s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.356s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/cmake/k3lso_msgsConfig.cmake
+[0.356s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/cmake/k3lso_msgsConfig-version.cmake
+[0.356s] -- Up-to-date: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/package.xml
+[0.359s] Invoked command in '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/k3lso_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/k3lso_msgs

@@ -1,0 +1,7 @@
+[console_scripts]
+imu_pub = test_perf_py.imu_pub:main
+imu_pub_tim = test_perf_py.imu_pub_tim:main
+imu_sub = test_perf_py.imu_sub:main
+motor_cli = test_perf_py.motor_cli:main
+motor_ser = test_perf_py.motor_ser:main
+

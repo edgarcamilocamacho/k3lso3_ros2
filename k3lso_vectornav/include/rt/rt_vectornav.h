@@ -6,7 +6,7 @@
 #ifndef _rt_vectornav
 #define _rt_vectornav
 
-#include <lcm/lcm-cpp.hpp>
+// #include <lcm/lcm-cpp.hpp>
 #include "SimUtilities/IMUTypes.h"
 
 #ifdef __cplusplus

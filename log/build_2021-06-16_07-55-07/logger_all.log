@@ -1,0 +1,314 @@
+[0.301s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.302s] DEBUG:colcon:Parsed command line arguments: Namespace(ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fdf718e67f0>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=12, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fdf718e67f0>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fdf718f24f0>)
+[0.306s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.306s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.306s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.306s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.306s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.306s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.307s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(k3lso_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(k3lso_msgs) by extension 'ignore'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(k3lso_msgs) by extension 'ignore_ament_install'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(k3lso_msgs) by extensions ['colcon_pkg']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(k3lso_msgs) by extension 'colcon_pkg'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(k3lso_msgs) by extensions ['colcon_meta']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(k3lso_msgs) by extension 'colcon_meta'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(k3lso_msgs) by extensions ['ros']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(k3lso_msgs) by extension 'ros'
+[0.321s] DEBUG:colcon.colcon_core.package_identification:Package 'k3lso_msgs' with type 'ros.ament_cmake' and name 'k3lso_msgs'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(k3lso_vectornav) by extensions ['ignore', 'ignore_ament_install']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(k3lso_vectornav) by extension 'ignore'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(k3lso_vectornav) by extension 'ignore_ament_install'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(k3lso_vectornav) by extensions ['colcon_pkg']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(k3lso_vectornav) by extension 'colcon_pkg'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(k3lso_vectornav) by extensions ['colcon_meta']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(k3lso_vectornav) by extension 'colcon_meta'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(k3lso_vectornav) by extensions ['ros']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(k3lso_vectornav) by extension 'ros'
+[0.322s] DEBUG:colcon.colcon_core.package_identification:Package 'k3lso_vectornav' with type 'ros.ament_cmake' and name 'k3lso_vectornav'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(test_perf_cpp) by extensions ['ignore', 'ignore_ament_install']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(test_perf_cpp) by extension 'ignore'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(test_perf_cpp) by extension 'ignore_ament_install'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(test_perf_cpp) by extensions ['colcon_pkg']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(test_perf_cpp) by extension 'colcon_pkg'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(test_perf_cpp) by extensions ['colcon_meta']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(test_perf_cpp) by extension 'colcon_meta'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(test_perf_cpp) by extensions ['ros']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(test_perf_cpp) by extension 'ros'
+[0.323s] DEBUG:colcon.colcon_core.package_identification:Package 'test_perf_cpp' with type 'ros.ament_cmake' and name 'test_perf_cpp'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(test_perf_py) by extensions ['ignore', 'ignore_ament_install']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(test_perf_py) by extension 'ignore'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(test_perf_py) by extension 'ignore_ament_install'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(test_perf_py) by extensions ['colcon_pkg']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(test_perf_py) by extension 'colcon_pkg'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(test_perf_py) by extensions ['colcon_meta']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(test_perf_py) by extension 'colcon_meta'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(test_perf_py) by extensions ['ros']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(test_perf_py) by extension 'ros'
+[0.325s] DEBUG:colcon.colcon_core.package_identification:Package 'test_perf_py' with type 'ros.ament_python' and name 'test_perf_py'
+[0.325s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.325s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.325s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.325s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.325s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'k3lso_msgs' build argument 'cmake_args' from command line to 'None'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'k3lso_msgs' build argument 'cmake_target' from command line to 'None'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'k3lso_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'k3lso_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'k3lso_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'k3lso_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'k3lso_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'k3lso_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'k3lso_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.343s] DEBUG:colcon.colcon_core.verb:Building package 'k3lso_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/k3lso_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs', 'merge_install': False, 'path': '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'k3lso_vectornav' build argument 'cmake_args' from command line to 'None'
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'k3lso_vectornav' build argument 'cmake_target' from command line to 'None'
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'k3lso_vectornav' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'k3lso_vectornav' build argument 'cmake_clean_cache' from command line to 'False'
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'k3lso_vectornav' build argument 'cmake_clean_first' from command line to 'False'
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'k3lso_vectornav' build argument 'cmake_force_configure' from command line to 'False'
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'k3lso_vectornav' build argument 'ament_cmake_args' from command line to 'None'
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'k3lso_vectornav' build argument 'catkin_cmake_args' from command line to 'None'
+[0.347s] Level 5:colcon.colcon_core.verb:set package 'k3lso_vectornav' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.347s] DEBUG:colcon.colcon_core.verb:Building package 'k3lso_vectornav' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/k3lso_vectornav', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav', 'merge_install': False, 'path': '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav', 'symlink_install': False, 'test_result_base': None}
+[0.349s] Level 5:colcon.colcon_core.verb:set package 'test_perf_cpp' build argument 'cmake_args' from command line to 'None'
+[0.349s] Level 5:colcon.colcon_core.verb:set package 'test_perf_cpp' build argument 'cmake_target' from command line to 'None'
+[0.349s] Level 5:colcon.colcon_core.verb:set package 'test_perf_cpp' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.349s] Level 5:colcon.colcon_core.verb:set package 'test_perf_cpp' build argument 'cmake_clean_cache' from command line to 'False'
+[0.350s] Level 5:colcon.colcon_core.verb:set package 'test_perf_cpp' build argument 'cmake_clean_first' from command line to 'False'
+[0.350s] Level 5:colcon.colcon_core.verb:set package 'test_perf_cpp' build argument 'cmake_force_configure' from command line to 'False'
+[0.350s] Level 5:colcon.colcon_core.verb:set package 'test_perf_cpp' build argument 'ament_cmake_args' from command line to 'None'
+[0.350s] Level 5:colcon.colcon_core.verb:set package 'test_perf_cpp' build argument 'catkin_cmake_args' from command line to 'None'
+[0.350s] Level 5:colcon.colcon_core.verb:set package 'test_perf_cpp' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.350s] DEBUG:colcon.colcon_core.verb:Building package 'test_perf_cpp' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_cpp', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_cpp', 'merge_install': False, 'path': '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/test_perf_cpp', 'symlink_install': False, 'test_result_base': None}
+[0.352s] Level 5:colcon.colcon_core.verb:set package 'test_perf_py' build argument 'cmake_args' from command line to 'None'
+[0.352s] Level 5:colcon.colcon_core.verb:set package 'test_perf_py' build argument 'cmake_target' from command line to 'None'
+[0.352s] Level 5:colcon.colcon_core.verb:set package 'test_perf_py' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.352s] Level 5:colcon.colcon_core.verb:set package 'test_perf_py' build argument 'cmake_clean_cache' from command line to 'False'
+[0.352s] Level 5:colcon.colcon_core.verb:set package 'test_perf_py' build argument 'cmake_clean_first' from command line to 'False'
+[0.352s] Level 5:colcon.colcon_core.verb:set package 'test_perf_py' build argument 'cmake_force_configure' from command line to 'False'
+[0.352s] Level 5:colcon.colcon_core.verb:set package 'test_perf_py' build argument 'ament_cmake_args' from command line to 'None'
+[0.352s] Level 5:colcon.colcon_core.verb:set package 'test_perf_py' build argument 'catkin_cmake_args' from command line to 'None'
+[0.352s] Level 5:colcon.colcon_core.verb:set package 'test_perf_py' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.352s] DEBUG:colcon.colcon_core.verb:Building package 'test_perf_py' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_py', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py', 'merge_install': False, 'path': '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/test_perf_py', 'symlink_install': False, 'test_result_base': None}
+[0.353s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.355s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.355s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_msgs' with build type 'ament_cmake'
+[0.355s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_msgs'
+[0.359s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.359s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.359s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.361s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[0.363s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav' with build type 'ament_cmake'
+[0.364s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_vectornav'
+[0.365s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.365s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.367s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[0.370s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/test_perf_cpp' with build type 'ament_cmake'
+[0.370s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/test_perf_cpp'
+[0.371s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.372s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.374s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[0.384s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/k3lso_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/k3lso_msgs -- -j12 -l12
+[0.389s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/k3lso_vectornav': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/k3lso_vectornav -- -j12 -l12
+[0.397s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_cpp': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_cpp -- -j12 -l12
+[0.475s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_cpp -- -j12 -l12
+[0.517s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_cpp': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_cpp
+[0.528s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_perf_cpp)
+[0.529s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_cpp
+[0.533s] Level 1:colcon.colcon_core.environment:checking '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_cpp' for CMake module files
+[0.534s] Level 1:colcon.colcon_core.environment:checking '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_cpp' for CMake config files
+[0.534s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_perf_cpp', 'cmake_prefix_path')
+[0.535s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_cpp/share/test_perf_cpp/hook/cmake_prefix_path.ps1'
+[0.536s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_cpp/share/test_perf_cpp/hook/cmake_prefix_path.dsv'
+[0.536s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_cpp/share/test_perf_cpp/hook/cmake_prefix_path.sh'
+[0.538s] Level 1:colcon.colcon_core.environment:checking '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_cpp/lib'
+[0.538s] Level 1:colcon.colcon_core.environment:checking '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_cpp/bin'
+[0.538s] Level 1:colcon.colcon_core.environment:checking '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_cpp/lib/pkgconfig/test_perf_cpp.pc'
+[0.538s] Level 1:colcon.colcon_core.environment:checking '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_cpp/lib/python3.8/site-packages'
+[0.539s] INFO:colcon.colcon_core.shell:Creating package script '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_cpp/share/test_perf_cpp/package.ps1'
+[0.540s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_cpp/share/test_perf_cpp/package.dsv'
+[0.541s] INFO:colcon.colcon_core.shell:Creating package script '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_cpp/share/test_perf_cpp/package.sh'
+[0.542s] INFO:colcon.colcon_core.shell:Creating package script '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_cpp/share/test_perf_cpp/package.bash'
+[0.543s] INFO:colcon.colcon_core.shell:Creating package script '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_cpp/share/test_perf_cpp/package.zsh'
+[0.544s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_cpp/share/colcon-core/packages/test_perf_cpp)
+[0.566s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_perf_cpp)
+[0.567s] Level 1:colcon.colcon_core.environment:checking '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_cpp' for CMake module files
+[0.568s] Level 1:colcon.colcon_core.environment:checking '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_cpp' for CMake config files
+[0.568s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_perf_cpp', 'cmake_prefix_path')
+[0.569s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_cpp/share/test_perf_cpp/hook/cmake_prefix_path.ps1'
+[0.569s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_cpp/share/test_perf_cpp/hook/cmake_prefix_path.dsv'
+[0.570s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_cpp/share/test_perf_cpp/hook/cmake_prefix_path.sh'
+[0.570s] Level 1:colcon.colcon_core.environment:checking '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_cpp/lib'
+[0.571s] Level 1:colcon.colcon_core.environment:checking '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_cpp/bin'
+[0.571s] Level 1:colcon.colcon_core.environment:checking '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_cpp/lib/pkgconfig/test_perf_cpp.pc'
+[0.571s] Level 1:colcon.colcon_core.environment:checking '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_cpp/lib/python3.8/site-packages'
+[0.572s] INFO:colcon.colcon_core.shell:Creating package script '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_cpp/share/test_perf_cpp/package.ps1'
+[0.572s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_cpp/share/test_perf_cpp/package.dsv'
+[0.573s] INFO:colcon.colcon_core.shell:Creating package script '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_cpp/share/test_perf_cpp/package.sh'
+[0.573s] INFO:colcon.colcon_core.shell:Creating package script '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_cpp/share/test_perf_cpp/package.bash'
+[0.574s] INFO:colcon.colcon_core.shell:Creating package script '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_cpp/share/test_perf_cpp/package.zsh'
+[0.574s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_cpp/share/colcon-core/packages/test_perf_cpp)
+[0.618s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/k3lso_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/k3lso_msgs -- -j12 -l12
+[0.674s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/k3lso_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/k3lso_msgs
+[0.726s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(k3lso_msgs)
+[0.727s] Level 1:colcon.colcon_core.environment:checking '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs' for CMake module files
+[0.727s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/k3lso_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/k3lso_msgs
+[0.728s] Level 1:colcon.colcon_core.environment:checking '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs' for CMake config files
+[0.728s] Level 1:colcon.colcon_core.shell:create_environment_hook('k3lso_msgs', 'cmake_prefix_path')
+[0.729s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/hook/cmake_prefix_path.ps1'
+[0.729s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/hook/cmake_prefix_path.dsv'
+[0.730s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/hook/cmake_prefix_path.sh'
+[0.730s] Level 1:colcon.colcon_core.environment:checking '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/lib'
+[0.730s] Level 1:colcon.colcon_core.shell:create_environment_hook('k3lso_msgs', 'ld_library_path_lib')
+[0.731s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/hook/ld_library_path_lib.ps1'
+[0.731s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/hook/ld_library_path_lib.dsv'
+[0.731s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/hook/ld_library_path_lib.sh'
+[0.732s] Level 1:colcon.colcon_core.environment:checking '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/bin'
+[0.732s] Level 1:colcon.colcon_core.environment:checking '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/lib/pkgconfig/k3lso_msgs.pc'
+[0.732s] Level 1:colcon.colcon_core.environment:checking '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/lib/python3.8/site-packages'
+[0.732s] Level 1:colcon.colcon_core.shell:create_environment_hook('k3lso_msgs', 'pythonpath')
+[0.732s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/hook/pythonpath.ps1'
+[0.733s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/hook/pythonpath.dsv'
+[0.733s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/hook/pythonpath.sh'
+[0.734s] INFO:colcon.colcon_core.shell:Creating package script '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/package.ps1'
+[0.734s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/package.dsv'
+[0.735s] INFO:colcon.colcon_core.shell:Creating package script '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/package.sh'
+[0.735s] INFO:colcon.colcon_core.shell:Creating package script '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/package.bash'
+[0.735s] INFO:colcon.colcon_core.shell:Creating package script '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/package.zsh'
+[0.736s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/colcon-core/packages/k3lso_msgs)
+[0.792s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(k3lso_msgs)
+[0.793s] Level 1:colcon.colcon_core.environment:checking '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs' for CMake module files
+[0.793s] Level 1:colcon.colcon_core.environment:checking '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs' for CMake config files
+[0.794s] Level 1:colcon.colcon_core.shell:create_environment_hook('k3lso_msgs', 'cmake_prefix_path')
+[0.794s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/hook/cmake_prefix_path.ps1'
+[0.795s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/hook/cmake_prefix_path.dsv'
+[0.795s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/hook/cmake_prefix_path.sh'
+[0.795s] Level 1:colcon.colcon_core.environment:checking '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/lib'
+[0.796s] Level 1:colcon.colcon_core.shell:create_environment_hook('k3lso_msgs', 'ld_library_path_lib')
+[0.796s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/hook/ld_library_path_lib.ps1'
+[0.796s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/hook/ld_library_path_lib.dsv'
+[0.797s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/hook/ld_library_path_lib.sh'
+[0.797s] Level 1:colcon.colcon_core.environment:checking '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/bin'
+[0.797s] Level 1:colcon.colcon_core.environment:checking '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/lib/pkgconfig/k3lso_msgs.pc'
+[0.797s] Level 1:colcon.colcon_core.environment:checking '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/lib/python3.8/site-packages'
+[0.797s] Level 1:colcon.colcon_core.shell:create_environment_hook('k3lso_msgs', 'pythonpath')
+[0.798s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/hook/pythonpath.ps1'
+[0.798s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/hook/pythonpath.dsv'
+[0.799s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/hook/pythonpath.sh'
+[0.799s] INFO:colcon.colcon_core.shell:Creating package script '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/package.ps1'
+[0.800s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/package.dsv'
+[0.801s] INFO:colcon.colcon_core.shell:Creating package script '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/package.sh'
+[0.801s] INFO:colcon.colcon_core.shell:Creating package script '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/package.bash'
+[0.801s] INFO:colcon.colcon_core.shell:Creating package script '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/k3lso_msgs/package.zsh'
+[0.802s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/share/colcon-core/packages/k3lso_msgs)
+[0.802s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/test_perf_py' with build type 'ament_python'
+[0.802s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_perf_py', 'ament_prefix_path')
+[0.803s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/share/test_perf_py/hook/ament_prefix_path.ps1'
+[0.803s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/share/test_perf_py/hook/ament_prefix_path.dsv'
+[0.804s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/share/test_perf_py/hook/ament_prefix_path.sh'
+[0.805s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.805s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.806s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[1.037s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/test_perf_py'
+[1.038s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.038s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.039s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[1.048s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/test_perf_py': AMENT_PREFIX_PATH=/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs LD_LIBRARY_PATH=/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib PYTHONPATH=/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/lib/python3.8/site-packages:/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/test_perf_py build --build-base /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_py/build install --prefix /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py --record /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_py/install.log --single-version-externally-managed
+[1.368s] Level 1:colcon.colcon_core.environment:checking '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py' for CMake module files
+[1.369s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/test_perf_py' returned '0': AMENT_PREFIX_PATH=/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs LD_LIBRARY_PATH=/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/lib PYTHONPATH=/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/lib/python3.8/site-packages:/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/test_perf_py build --build-base /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_py/build install --prefix /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py --record /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_py/install.log --single-version-externally-managed
+[1.369s] Level 1:colcon.colcon_core.environment:checking '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py' for CMake config files
+[1.370s] Level 1:colcon.colcon_core.environment:checking '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/lib'
+[1.370s] Level 1:colcon.colcon_core.environment:checking '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/bin'
+[1.370s] Level 1:colcon.colcon_core.environment:checking '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/lib/pkgconfig/test_perf_py.pc'
+[1.370s] Level 1:colcon.colcon_core.environment:checking '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/lib/python3.8/site-packages'
+[1.370s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_perf_py', 'pythonpath')
+[1.371s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/share/test_perf_py/hook/pythonpath.ps1'
+[1.371s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/share/test_perf_py/hook/pythonpath.dsv'
+[1.372s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/share/test_perf_py/hook/pythonpath.sh'
+[1.372s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_perf_py)
+[1.373s] INFO:colcon.colcon_core.shell:Creating package script '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/share/test_perf_py/package.ps1'
+[1.374s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/share/test_perf_py/package.dsv'
+[1.374s] INFO:colcon.colcon_core.shell:Creating package script '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/share/test_perf_py/package.sh'
+[1.374s] INFO:colcon.colcon_core.shell:Creating package script '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/share/test_perf_py/package.bash'
+[1.375s] INFO:colcon.colcon_core.shell:Creating package script '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/share/test_perf_py/package.zsh'
+[1.375s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_py/share/colcon-core/packages/test_perf_py)
+[4.208s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/k3lso_vectornav' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/k3lso_vectornav -- -j12 -l12
+[4.260s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/k3lso_vectornav': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/k3lso_vectornav
+[4.271s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(k3lso_vectornav)
+[4.273s] Level 1:colcon.colcon_core.environment:checking '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav' for CMake module files
+[4.274s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/k3lso_vectornav' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/k3lso_vectornav
+[4.274s] Level 1:colcon.colcon_core.environment:checking '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav' for CMake config files
+[4.275s] Level 1:colcon.colcon_core.shell:create_environment_hook('k3lso_vectornav', 'cmake_prefix_path')
+[4.275s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/hook/cmake_prefix_path.ps1'
+[4.276s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/hook/cmake_prefix_path.dsv'
+[4.276s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/hook/cmake_prefix_path.sh'
+[4.277s] Level 1:colcon.colcon_core.environment:checking '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/lib'
+[4.277s] Level 1:colcon.colcon_core.environment:checking '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/bin'
+[4.277s] Level 1:colcon.colcon_core.environment:checking '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/lib/pkgconfig/k3lso_vectornav.pc'
+[4.277s] Level 1:colcon.colcon_core.environment:checking '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/lib/python3.8/site-packages'
+[4.278s] INFO:colcon.colcon_core.shell:Creating package script '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/package.ps1'
+[4.279s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/package.dsv'
+[4.279s] INFO:colcon.colcon_core.shell:Creating package script '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/package.sh'
+[4.280s] INFO:colcon.colcon_core.shell:Creating package script '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/package.bash'
+[4.280s] INFO:colcon.colcon_core.shell:Creating package script '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/package.zsh'
+[4.281s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/colcon-core/packages/k3lso_vectornav)
+[4.331s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(k3lso_vectornav)
+[4.333s] Level 1:colcon.colcon_core.environment:checking '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav' for CMake module files
+[4.333s] Level 1:colcon.colcon_core.environment:checking '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav' for CMake config files
+[4.334s] Level 1:colcon.colcon_core.shell:create_environment_hook('k3lso_vectornav', 'cmake_prefix_path')
+[4.335s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/hook/cmake_prefix_path.ps1'
+[4.335s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/hook/cmake_prefix_path.dsv'
+[4.336s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/hook/cmake_prefix_path.sh'
+[4.336s] Level 1:colcon.colcon_core.environment:checking '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/lib'
+[4.336s] Level 1:colcon.colcon_core.environment:checking '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/bin'
+[4.336s] Level 1:colcon.colcon_core.environment:checking '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/lib/pkgconfig/k3lso_vectornav.pc'
+[4.337s] Level 1:colcon.colcon_core.environment:checking '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/lib/python3.8/site-packages'
+[4.337s] INFO:colcon.colcon_core.shell:Creating package script '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/package.ps1'
+[4.338s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/package.dsv'
+[4.339s] INFO:colcon.colcon_core.shell:Creating package script '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/package.sh'
+[4.339s] INFO:colcon.colcon_core.shell:Creating package script '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/package.bash'
+[4.340s] INFO:colcon.colcon_core.shell:Creating package script '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/package.zsh'
+[4.340s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/colcon-core/packages/k3lso_vectornav)
+[4.341s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[4.341s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[4.341s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[4.341s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[4.346s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[4.346s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[4.346s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[4.348s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[4.349s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/local_setup.ps1'
+[4.350s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/_local_setup_util_ps1.py'
+[4.352s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/setup.ps1'
+[4.355s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/local_setup.sh'
+[4.356s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/_local_setup_util_sh.py'
+[4.356s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/setup.sh'
+[4.359s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/local_setup.bash'
+[4.360s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/setup.bash'
+[4.363s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/local_setup.zsh'
+[4.363s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/setup.zsh'

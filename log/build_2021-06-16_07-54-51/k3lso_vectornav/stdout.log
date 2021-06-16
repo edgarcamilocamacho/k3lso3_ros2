@@ -1,0 +1,86 @@
+-- The C compiler identification is GNU 9.3.0
+-- The CXX compiler identification is GNU 9.3.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.5", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found rclcpp: 2.3.1 (/opt/ros/foxy/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+-- Found FastRTPS: /opt/ros/foxy/include  
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found sensor_msgs: 2.0.4 (/opt/ros/foxy/share/sensor_msgs/cmake)
+-- Found tf2: 0.13.10 (/opt/ros/foxy/share/tf2/cmake)
+-- Found tf2_msgs: 0.13.10 (/opt/ros/foxy/share/tf2_msgs/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/k3lso_vectornav
+[35m[1mScanning dependencies of target k3lso_vectornav[0m
+[  7%] [32mBuilding CXX object CMakeFiles/k3lso_vectornav.dir/src/rt/rt_vectornav.cpp.o[0m
+[  7%] [32mBuilding CXX object CMakeFiles/k3lso_vectornav.dir/src/k3lso_vectornav_node.cpp.o[0m
+[ 11%] [32mBuilding C object CMakeFiles/k3lso_vectornav.dir/src/vn/error_detection.c.o[0m
+[ 19%] [32mBuilding C object CMakeFiles/k3lso_vectornav.dir/src/vn/protocol/spi.c.o[0m
+[ 23%] [32mBuilding C object CMakeFiles/k3lso_vectornav.dir/src/vn/conv.c.o[0m
+[ 19%] [32mBuilding C object CMakeFiles/k3lso_vectornav.dir/src/vn/error.c.o[0m
+[ 26%] [32mBuilding C object CMakeFiles/k3lso_vectornav.dir/src/vn/math/vector.c.o[0m
+[ 30%] [32mBuilding C object CMakeFiles/k3lso_vectornav.dir/src/vn/math/matrix.c.o[0m
+[ 38%] [32mBuilding C object CMakeFiles/k3lso_vectornav.dir/src/vn/sensors.c.o[0m
+[ 38%] [32mBuilding C object CMakeFiles/k3lso_vectornav.dir/src/vn/protocol/upack.c.o[0m
+[ 42%] [32mBuilding C object CMakeFiles/k3lso_vectornav.dir/src/vn/protocol/upackf.c.o[0m
+[ 46%] [32mBuilding C object CMakeFiles/k3lso_vectornav.dir/src/vn/sensors/compositedata.c.o[0m
+[ 50%] [32mBuilding C object CMakeFiles/k3lso_vectornav.dir/src/vn/sensors/ezasyncdata.c.o[0m
+[ 53%] [32mBuilding C object CMakeFiles/k3lso_vectornav.dir/src/vn/util.c.o[0m
+[ 57%] [32mBuilding C object CMakeFiles/k3lso_vectornav.dir/src/vn/sensors/searcher.c.o[0m
+[ 61%] [32mBuilding C object CMakeFiles/k3lso_vectornav.dir/src/vn/xplat/criticalsection.c.o[0m
+[ 65%] [32mBuilding C object CMakeFiles/k3lso_vectornav.dir/src/vn/xplat/event.c.o[0m
+[ 69%] [32mBuilding C object CMakeFiles/k3lso_vectornav.dir/src/vn/xplat/serialport.c.o[0m
+[ 73%] [32mBuilding C object CMakeFiles/k3lso_vectornav.dir/src/vn/xplat/thread.c.o[0m
+[ 76%] [32mBuilding C object CMakeFiles/k3lso_vectornav.dir/src/vn/xplat/time.c.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/k3lso_vectornav.dir/src/Utilities/PeriodicTask.cpp.o[0m
+[ 84%] [32mBuilding CXX object CMakeFiles/k3lso_vectornav.dir/src/Utilities/SegfaultHandler.cpp.o[0m
+[ 88%] [32mBuilding CXX object CMakeFiles/k3lso_vectornav.dir/src/Utilities/Utilities_print.cpp.o[0m
+[ 92%] [32mBuilding CXX object CMakeFiles/k3lso_vectornav.dir/src/Utilities/filters.cpp.o[0m
+[ 96%] [32mBuilding CXX object CMakeFiles/k3lso_vectornav.dir/src/Utilities/utilities.cpp.o[0m
+[100%] [32m[1mLinking CXX executable k3lso_vectornav[0m
+[100%] Built target k3lso_vectornav
+-- Install configuration: ""
+-- Installing: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/lib/k3lso_vectornav/k3lso_vectornav
+-- Set runtime path of "/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/lib/k3lso_vectornav/k3lso_vectornav" to ""
+-- Installing: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/ament_index/resource_index/package_run_dependencies/k3lso_vectornav
+-- Installing: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/ament_index/resource_index/parent_prefix_path/k3lso_vectornav
+-- Installing: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/environment/ament_prefix_path.sh
+-- Installing: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/environment/ament_prefix_path.dsv
+-- Installing: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/environment/path.sh
+-- Installing: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/environment/path.dsv
+-- Installing: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/local_setup.bash
+-- Installing: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/local_setup.sh
+-- Installing: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/local_setup.zsh
+-- Installing: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/local_setup.dsv
+-- Installing: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/package.dsv
+-- Installing: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/ament_index/resource_index/packages/k3lso_vectornav
+-- Installing: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/cmake/k3lso_vectornavConfig.cmake
+-- Installing: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/cmake/k3lso_vectornavConfig-version.cmake
+-- Installing: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/k3lso_vectornav/share/k3lso_vectornav/package.xml

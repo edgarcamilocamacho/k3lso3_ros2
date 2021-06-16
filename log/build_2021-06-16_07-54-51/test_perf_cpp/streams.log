@@ -1,0 +1,66 @@
+[0.017s] Invoking command in '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_cpp': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/test_perf_cpp -DCMAKE_INSTALL_PREFIX=/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_cpp
+[0.077s] -- The C compiler identification is GNU 9.3.0
+[0.125s] -- The CXX compiler identification is GNU 9.3.0
+[0.130s] -- Check for working C compiler: /usr/bin/cc
+[0.195s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.196s] -- Detecting C compiler ABI info
+[0.251s] -- Detecting C compiler ABI info - done
+[0.262s] -- Detecting C compile features
+[0.262s] -- Detecting C compile features - done
+[0.264s] -- Check for working CXX compiler: /usr/bin/c++
+[0.338s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.339s] -- Detecting CXX compiler ABI info
+[0.406s] -- Detecting CXX compiler ABI info - done
+[0.423s] -- Detecting CXX compile features
+[0.424s] -- Detecting CXX compile features - done
+[0.425s] -- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.451s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.5", minimum required is "3") 
+[0.451s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.657s] -- Found rclcpp: 2.3.1 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.700s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.706s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.772s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.799s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.869s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.919s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.920s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.921s] -- Looking for pthread.h
+[0.986s] -- Looking for pthread.h - found
+[0.986s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.054s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.054s] -- Looking for pthread_create in pthreads
+[1.105s] -- Looking for pthread_create in pthreads - not found
+[1.105s] -- Looking for pthread_create in pthread
+[1.168s] -- Looking for pthread_create in pthread - found
+[1.169s] -- Found Threads: TRUE  
+[1.315s] -- Found sensor_msgs: 2.0.4 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[1.475s] -- Configuring done
+[1.482s] -- Generating done
+[1.483s] -- Build files have been written to: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_cpp
+[1.490s] Invoked command in '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/test_perf_cpp -DCMAKE_INSTALL_PREFIX=/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_cpp
+[1.492s] Invoking command in '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_cpp': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_cpp -- -j12 -l12
+[1.529s] [35m[1mScanning dependencies of target talker[0m
+[1.566s] [ 50%] [32mBuilding CXX object CMakeFiles/talker.dir/src/publisher_member_function.cpp.o[0m
+[5.162s] [100%] [32m[1mLinking CXX executable talker[0m
+[5.317s] [100%] Built target talker
+[5.328s] Invoked command in '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_cpp -- -j12 -l12
+[5.362s] Invoking command in '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_cpp': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_cpp
+[5.371s] -- Install configuration: ""
+[5.371s] -- Installing: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_cpp/lib/test_perf_cpp/talker
+[5.372s] -- Set runtime path of "/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_cpp/lib/test_perf_cpp/talker" to ""
+[5.372s] -- Installing: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_cpp/share/ament_index/resource_index/package_run_dependencies/test_perf_cpp
+[5.372s] -- Installing: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_cpp/share/ament_index/resource_index/parent_prefix_path/test_perf_cpp
+[5.372s] -- Installing: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_cpp/share/test_perf_cpp/environment/ament_prefix_path.sh
+[5.372s] -- Installing: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_cpp/share/test_perf_cpp/environment/ament_prefix_path.dsv
+[5.373s] -- Installing: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_cpp/share/test_perf_cpp/environment/path.sh
+[5.373s] -- Installing: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_cpp/share/test_perf_cpp/environment/path.dsv
+[5.373s] -- Installing: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_cpp/share/test_perf_cpp/local_setup.bash
+[5.373s] -- Installing: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_cpp/share/test_perf_cpp/local_setup.sh
+[5.373s] -- Installing: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_cpp/share/test_perf_cpp/local_setup.zsh
+[5.373s] -- Installing: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_cpp/share/test_perf_cpp/local_setup.dsv
+[5.373s] -- Installing: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_cpp/share/test_perf_cpp/package.dsv
+[5.373s] -- Installing: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_cpp/share/ament_index/resource_index/packages/test_perf_cpp
+[5.374s] -- Installing: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_cpp/share/test_perf_cpp/cmake/test_perf_cppConfig.cmake
+[5.374s] -- Installing: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_cpp/share/test_perf_cpp/cmake/test_perf_cppConfig-version.cmake
+[5.374s] -- Installing: /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/install/test_perf_cpp/share/test_perf_cpp/package.xml
+[5.377s] Invoked command in '/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/build/test_perf_cpp

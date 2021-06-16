@@ -1,0 +1,7 @@
+{
+  "package_name": "k3lso_msgs",
+  "non_idl_tuples": [
+    "/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_msgs:msg/MotorsCommand.msg",
+    "/home/camilo/ros2_ws/k3lso_ws/src/k3lso3_ros2/k3lso_msgs:srv/MotorsStep.srv"
+  ]
+}
