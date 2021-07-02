@@ -1,0 +1,941 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="k3lso_description">
+  <link
+    name="base_link">
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://k3lso_description/meshes/k3lso_v1/body.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.964705882352941 0.964705882352941 0.952941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://k3lso_description/meshes/k3lso_v1/body.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="abduct_fr">
+    <inertial>
+      <origin
+        xyz="-0.00484231986466119 -0.00125952112498501 0.000189484869132284"
+        rpy="0 0 0" />
+      <mass
+        value="0.396109914280817" />
+      <inertia
+        ixx="0.00751813161468568"
+        ixy="1.4299439250007E-08"
+        ixz="3.80854392030588E-08"
+        iyy="0.0381266680750878"
+        iyz="-1.47763008595493E-08"
+        izz="0.0432392503417179" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://k3lso_description/meshes/k3lso_v1/abduct_fr.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.964705882352941 0.964705882352941 0.952941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://k3lso_description/meshes/k3lso_v1/abduct_fr.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="torso_to_abduct_fr_j"
+    type="revolute">
+    <origin
+      xyz="0.245219923058774 -0.0550000000000008 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="abduct_fr" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.5707"
+      upper="1.5707"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="thigh_fr">
+    <inertial>
+      <origin
+        xyz="-0.000478510148912287 0.0311377964359821 -0.030348024981062"
+        rpy="0 0 0" />
+      <mass
+        value="0.546195342680921" />
+      <inertia
+        ixx="0.00327786490712717"
+        ixy="1.11400732695204E-05"
+        ixz="1.10174326052676E-05"
+        iyy="0.00324140966772312"
+        iyz="-0.000512231637706232"
+        izz="0.0006679027830657" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://k3lso_description/meshes/k3lso_v1/thigh_fr.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.964705882352941 0.964705882352941 0.952941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://k3lso_description/meshes/k3lso_v1/thigh_fr.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="abduct_fr_to_thigh_fr_j"
+    type="revolute">
+    <origin
+      xyz="0.000399031232342278 -0.122751810936089 0"
+      rpy="0 0 0" />
+    <parent
+      link="abduct_fr" />
+    <child
+      link="thigh_fr" />
+    <axis
+      xyz="0.025727130725705 -0.999669002592669 0" />
+    <limit
+      lower="-1.5707"
+      upper="1.5707"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="shank_fr">
+    <inertial>
+      <origin
+        xyz="0.0549684892727352 -2.49242758765256E-07 -0.109651744650495"
+        rpy="0 0 0" />
+      <mass
+        value="0.081109998116566" />
+      <inertia
+        ixx="0.000500231796685866"
+        ixy="9.81693631012702E-11"
+        ixz="0.000214900791384443"
+        iyy="0.000604957980683309"
+        iyz="-1.91113326412533E-10"
+        izz="0.000110179896832039" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://k3lso_description/meshes/k3lso_v1/shank_fr.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.964705882352941 0.964705882352941 0.952941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://k3lso_description/meshes/k3lso_v1/shank_fr.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="thigh_fr_to_knee_fr_j"
+    type="revolute">
+    <origin
+      xyz="0.000516157962112795 0.000495229667533292 -0.279146679668012"
+      rpy="0 0 0" />
+    <parent
+      link="thigh_fr" />
+    <child
+      link="shank_fr" />
+    <axis
+      xyz="0 -0.999995417642509 0.00302732455888055" />
+    <limit
+      lower="-1.5707"
+      upper="1.5707"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="toe_fr">
+    <inertial>
+      <origin
+        xyz="0.000608731407316154 6.84552792562521E-07 -0.00856256526660643"
+        rpy="0 0 0" />
+      <mass
+        value="0.0300759767291781" />
+      <inertia
+        ixx="4.27926359049145E-06"
+        ixy="-1.32414223538088E-12"
+        ixz="-1.59157747831505E-07"
+        iyy="7.11974474670345E-06"
+        iyz="-5.74123400586303E-13"
+        izz="7.11269700903231E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://k3lso_description/meshes/k3lso_v1/toe_fr.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.388235294117647 0.4 0.415686274509804 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://k3lso_description/meshes/k3lso_v1/toe_fr.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="toe_fr_joint"
+    type="fixed">
+    <origin
+      xyz="0.0953906355422662 0 -0.235215459960343"
+      rpy="0 0 0" />
+    <parent
+      link="shank_fr" />
+    <child
+      link="toe_fr" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="abduct_fl">
+    <inertial>
+      <origin
+        xyz="-0.00484226474047186 0.00125953471432366 0.00018950660465375"
+        rpy="0 0 0" />
+      <mass
+        value="0.396109199116923" />
+      <inertia
+        ixx="0.00031603387487169"
+        ixy="-4.25044180958937E-06"
+        ixz="4.8900552845955E-06"
+        iyy="0.000502098660532483"
+        iyz="3.11178329361914E-07"
+        izz="0.000371664860478397" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://k3lso_description/meshes/k3lso_v1/abduct_fl.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.964705882352941 0.964705882352941 0.952941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://k3lso_description/meshes/k3lso_v1/abduct_fl.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="torso_to_abduct_fl_j"
+    type="revolute">
+    <origin
+      xyz="0.245219923058774 0.0549999999999968 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="abduct_fl" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.5707"
+      upper="1.5707"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="thigh_fl">
+    <inertial>
+      <origin
+        xyz="0.000315058821563435 -0.031126278080156 -0.0306587245367596"
+        rpy="0 0 0" />
+      <mass
+        value="0.546697211873335" />
+      <inertia
+        ixx="0.00330479941946454"
+        ixy="6.65268519093769E-06"
+        ixz="-1.43340571640754E-06"
+        iyy="0.00326908997472768"
+        iyz="0.00051835895621716"
+        izz="0.000668809439333965" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://k3lso_description/meshes/k3lso_v1/thigh_fl.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.964705882352941 0.964705882352941 0.952941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://k3lso_description/meshes/k3lso_v1/thigh_fl.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="abduct_fl_to_thigh_fl_j"
+    type="revolute">
+    <origin
+      xyz="0 0.122751810936103 0"
+      rpy="0 0 0" />
+    <parent
+      link="abduct_fl" />
+    <child
+      link="thigh_fl" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-1.5707"
+      upper="1.5707"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="shank_fl">
+    <inertial>
+      <origin
+        xyz="0.0549684891728376 2.09404099865695E-07 -0.10971351531058"
+        rpy="0 0 0" />
+      <mass
+        value="0.0811099978666444" />
+      <inertia
+        ixx="0.000500231792331512"
+        ixy="9.81980796948803E-11"
+        ixz="0.000214900790630476"
+        iyy="0.000604957976199982"
+        iyz="-1.91276046322402E-10"
+        izz="0.000110179896698955" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://k3lso_description/meshes/k3lso_v1/shank_fl.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.964705882352941 0.964705882352941 0.952941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://k3lso_description/meshes/k3lso_v1/shank_fl.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="thigh_fl_to_knee_fl_j"
+    type="revolute">
+    <origin
+      xyz="-0.000117126729800715 -0.000495229625122662 -0.280219911004513"
+      rpy="0 0 0" />
+    <parent
+      link="thigh_fl" />
+    <child
+      link="shank_fl" />
+    <axis
+      xyz="0 -0.999995417642509 0.00302732455888036" />
+    <limit
+      lower="-1.5707"
+      upper="1.5707"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="toe_fl">
+    <inertial>
+      <origin
+        xyz="0.00110075637665802 1.62257132702015E-07 -0.00945860206234855"
+        rpy="0 0 0" />
+      <mass
+        value="0.0300759865662061" />
+      <inertia
+        ixx="4.31018518816081E-06"
+        ixy="-1.43843774054927E-12"
+        ixz="-3.34651009328234E-07"
+        iyy="7.1197446054938E-06"
+        iyz="3.05793178852857E-13"
+        izz="7.08177615639163E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://k3lso_description/meshes/k3lso_v1/toe_fl.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.388235294117647 0.4 0.415686274509804 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://k3lso_description/meshes/k3lso_v1/toe_fl.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="toe_fl_joint"
+    type="fixed">
+    <origin
+      xyz="0.0953906355410575 0 -0.234338180039215"
+      rpy="0 0 0" />
+    <parent
+      link="shank_fl" />
+    <child
+      link="toe_fl" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="abduct_hr">
+    <inertial>
+      <origin
+        xyz="0.00484226493526946 -0.00125953471373114 0.000189502216548926"
+        rpy="0 0 0" />
+      <mass
+        value="0.396109199127274" />
+      <inertia
+        ixx="0.000316033889085991"
+        ixy="-4.25044064960815E-06"
+        ixz="-4.88996418333182E-06"
+        iyy="0.000502098610857557"
+        iyz="-3.11204445520268E-07"
+        izz="0.000371664796600426" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://k3lso_description/meshes/k3lso_v1/abduct_hr.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.964705882352941 0.964705882352941 0.952941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://k3lso_description/meshes/k3lso_v1/abduct_hr.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="torso_to_abduct_hr_j"
+    type="revolute">
+    <origin
+      xyz="-0.245219923058766 -0.0550000000000008 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="abduct_hr" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.5707"
+      upper="1.5707"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="thigh_hr">
+    <inertial>
+      <origin
+        xyz="-0.000478515004623314 0.0311377971218236 -0.0303480277915815"
+        rpy="0 0 0" />
+      <mass
+        value="0.546195331504141" />
+      <inertia
+        ixx="0.0032778639422384"
+        ixy="1.1140042232062E-05"
+        ixz="1.10173134586132E-05"
+        iyy="0.00324140863037604"
+        iyz="-0.000512231550981055"
+        izz="0.000667902683181184" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://k3lso_description/meshes/k3lso_v1/thigh_hr.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.964705882352941 0.964705882352941 0.952941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://k3lso_description/meshes/k3lso_v1/thigh_hr.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="abduct_hr_to_thigh_hr_j"
+    type="revolute">
+    <origin
+      xyz="0.000399028675898028 -0.122751810936089 0"
+      rpy="0 0 0" />
+    <parent
+      link="abduct_hr" />
+    <child
+      link="thigh_hr" />
+    <axis
+      xyz="0.0257269660103994 -0.999669006831711 0" />
+    <limit
+      lower="-1.5707"
+      upper="1.5707"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="shank_hr">
+    <inertial>
+      <origin
+        xyz="0.054968489493814 -2.49213132741399E-07 -0.109651744219478"
+        rpy="0 0 0" />
+      <mass
+        value="0.0811099978056902" />
+      <inertia
+        ixx="0.00050023179653929"
+        ixy="9.80751279109067E-11"
+        ixz="0.000214900794486329"
+        iyy="0.000604957982563406"
+        iyz="-1.90716904791229E-10"
+        izz="0.000110179898875315" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://k3lso_description/meshes/k3lso_v1/shank_hr.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.964705882352941 0.964705882352941 0.952941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://k3lso_description/meshes/k3lso_v1/shank_hr.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="thigh_hr_to_knee_hr_j"
+    type="revolute">
+    <origin
+      xyz="0.000516155405661634 0.000495229656711615 -0.279146686817303"
+      rpy="0 0 0" />
+    <parent
+      link="thigh_hr" />
+    <child
+      link="shank_hr" />
+    <axis
+      xyz="0 -0.999995417642509 0.00302732455888076" />
+    <limit
+      lower="-1.5707"
+      upper="1.5707"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="toe_hr">
+    <inertial>
+      <origin
+        xyz="0.000608731467646423 6.84550471974354E-07 -0.00856256520641324"
+        rpy="0 0 0" />
+      <mass
+        value="0.0300759763632581" />
+      <inertia
+        ixx="4.27926356475535E-06"
+        ixy="-1.3252584193167E-12"
+        ixz="-1.59157756406523E-07"
+        iyy="7.11974466355619E-06"
+        iyz="-5.73174029252813E-13"
+        izz="7.11269694703716E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://k3lso_description/meshes/k3lso_v1/toe_hr.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.388235294117647 0.4 0.415686274509804 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://k3lso_description/meshes/k3lso_v1/toe_hr.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="toe_hr_joint"
+    type="fixed">
+    <origin
+      xyz="0.0953906355422661 0 -0.235215460118963"
+      rpy="0 0 0" />
+    <parent
+      link="shank_hr" />
+    <child
+      link="toe_hr" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="abduct_hl">
+    <inertial>
+      <origin
+        xyz="0.0048423085989609 0.00125951974571897 0.000189500189855751"
+        rpy="0 0 0" />
+      <mass
+        value="0.396109867124066" />
+      <inertia
+        ixx="0.000316034471773063"
+        ixy="4.25070597099692E-06"
+        ixz="-4.89007903698079E-06"
+        iyy="0.000502099144759616"
+        iyz="3.11106992655994E-07"
+        izz="0.000371665058066423" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://k3lso_description/meshes/k3lso_v1/abduct_hl.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.964705882352941 0.964705882352941 0.952941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://k3lso_description/meshes/k3lso_v1/abduct_hl.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="torso_to_abduct_hl_j"
+    type="revolute">
+    <origin
+      xyz="-0.245219923058766 0.0549999999999967 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="abduct_hl" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.5707"
+      upper="1.5707"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="thigh_hl">
+    <inertial>
+      <origin
+        xyz="0.000315053104781249 -0.0311262780768579 -0.0306587178828229"
+        rpy="0 0 0" />
+      <mass
+        value="0.546697211960175" />
+      <inertia
+        ixx="0.00330479942127368"
+        ixy="6.65268518437835E-06"
+        ixz="-1.43340574098979E-06"
+        iyy="0.00326908997650796"
+        iyz="0.000518358956480012"
+        izz="0.000668809439398849" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://k3lso_description/meshes/k3lso_v1/thigh_hl.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.964705882352941 0.964705882352941 0.952941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://k3lso_description/meshes/k3lso_v1/thigh_hl.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="abduct_hl_to_thigh_hl_j"
+    type="revolute">
+    <origin
+      xyz="0 0.122751810936103 0"
+      rpy="0 0 0" />
+    <parent
+      link="abduct_hl" />
+    <child
+      link="thigh_hl" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-1.5707"
+      upper="1.5707"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="shank_hl">
+    <inertial>
+      <origin
+        xyz="0.054968489273299 2.09459003530643E-07 -0.109713502042612"
+        rpy="0 0 0" />
+      <mass
+        value="0.0811099983335731" />
+      <inertia
+        ixx="0.000500231796978427"
+        ixy="9.81623478600195E-11"
+        ixz="0.000214900791481848"
+        iyy="0.000604957981009322"
+        iyz="-1.91081947735809E-10"
+        izz="0.000110179896877307" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://k3lso_description/meshes/k3lso_v1/shank_hl.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.964705882352941 0.964705882352941 0.952941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://k3lso_description/meshes/k3lso_v1/shank_hl.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="thigh_hl_to_knee_hl_j"
+    type="revolute">
+    <origin
+      xyz="-0.000117132446322166 -0.000495229656806734 -0.280219918153741"
+      rpy="0 0 0" />
+    <parent
+      link="thigh_hl" />
+    <child
+      link="shank_hl" />
+    <axis
+      xyz="0 -0.999995417642509 0.00302732455888008" />
+    <limit
+      lower="-1.5707"
+      upper="1.5707"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="toe_hl">
+    <inertial>
+      <origin
+        xyz="0.000608731421308628 1.65516653910514E-07 -0.00950160245008813"
+        rpy="0 0 0" />
+      <mass
+        value="0.0300759767291783" />
+      <inertia
+        ixx="4.27926359049146E-06"
+        ixy="-1.3241428819059E-12"
+        ixz="-1.5915774783151E-07"
+        iyy="7.11974474670349E-06"
+        iyz="-5.74123437979157E-13"
+        izz="7.11269700903236E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://k3lso_description/meshes/k3lso_v1/toe_hl.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.388235294117647 0.4 0.415686274509804 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://k3lso_description/meshes/k3lso_v1/toe_hl.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="toe_hl_joint"
+    type="fixed">
+    <origin
+      xyz="0.0953906355410606 0 -0.234338180197893"
+      rpy="0 0 0" />
+    <parent
+      link="shank_hl" />
+    <child
+      link="toe_hl" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
