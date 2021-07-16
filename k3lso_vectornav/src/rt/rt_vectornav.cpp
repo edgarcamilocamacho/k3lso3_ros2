@@ -21,9 +21,9 @@
 #include "rt/rt_vectornav.h"
 // #include "vectornav_lcmt.hpp"
 
-#define K_MINI_CHEETAH_VECTOR_NAV_SERIAL "/dev/ttyUSB0"
+#define K_MINI_CHEETAH_VECTOR_NAV_SERIAL "/dev/ttyS6"
 
-#define PRINT_VECTORNAV_DEBUG
+// #define PRINT_VECTORNAV_DEBUG
 
 int processErrorReceived(const std::string& errorMessage, VnError errorCode);
 void vectornav_handler(void* userData, VnUartPacket* packet,
@@ -61,7 +61,7 @@ bool init_vectornav() {
   VpeBasicControlRegister vpeReg;
   ImuFilteringConfigurationRegister filtReg;
   const char SENSOR_PORT[] = K_MINI_CHEETAH_VECTOR_NAV_SERIAL;
-  const uint32_t SENSOR_BAUDRATE = 115200;
+  const uint32_t SENSOR_BAUDRATE = 921600;
   char modelNumber[30];
   char strConversions[50];
   uint32_t newHz, oldHz;
@@ -153,7 +153,7 @@ bool init_vectornav() {
   // setup binary output message type
   BinaryOutputRegister_initialize(
       &(vn.bor), ASYNCMODE_PORT2,
-      16,  // divisor:  output frequency = 800/divisor
+      1,  // divisor:  output frequency = 800/divisor
       (CommonGroup)(COMMONGROUP_QUATERNION | COMMONGROUP_ANGULARRATE |
                     COMMONGROUP_ACCEL),
       TIMEGROUP_NONE, IMUGROUP_NONE, GPSGROUP_NONE, ATTITUDEGROUP_NONE,
