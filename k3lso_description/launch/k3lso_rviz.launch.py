@@ -14,30 +14,30 @@ def generate_launch_description():
     rviz_file = os.path.join(get_package_share_directory('k3lso_description'), 'rviz', 'k3lso.rviz')
     urdf_path = os.path.join(get_package_share_directory('k3lso_description'), 'urdf', 'k3lso_v1.urdf')
 
-    with open(urdf_path, 'r') as infp:
-        robot_desc = infp.read()
+    # with open(urdf_path, 'r') as infp:
+    #     robot_desc = infp.read()
 
     return LaunchDescription([
         Node(
             package='joint_state_publisher_gui',
-            executable='joint_state_publisher_gui',
-            name='joint_state_publisher_gui',
+            node_executable='joint_state_publisher_gui',
+            node_name='joint_state_publisher_gui',
             arguments=[urdf_path],
             parameters=[{'use_gui': use_gui}],
             output='screen'),
 
         Node(
             package='robot_state_publisher',
-            executable='robot_state_publisher',
-            name='robot_state_publisher',
-            parameters=[{'robot_description': robot_desc}],
+            node_executable='robot_state_publisher',
+            node_name='robot_state_publisher',
+            # parameters=[{'robot_description': robot_desc}],
             arguments=[urdf_path],
             output='screen'),
 
         Node(
             package='rviz2',
-            executable='rviz2',
-            name='rviz2',
+            node_executable='rviz2',
+            node_name='rviz2',
             arguments=['-d', rviz_file],
             output='screen')
     ])
