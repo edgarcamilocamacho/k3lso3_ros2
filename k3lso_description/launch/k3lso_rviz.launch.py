@@ -18,13 +18,13 @@ def generate_launch_description():
     #     robot_desc = infp.read()
 
     return LaunchDescription([
-        Node(
-            package='joint_state_publisher_gui',
-            node_executable='joint_state_publisher_gui',
-            node_name='joint_state_publisher_gui',
-            arguments=[urdf_path],
-            parameters=[{'use_gui': use_gui}],
-            output='screen'),
+        # Node(
+        #     package='joint_state_publisher_gui',
+        #     node_executable='joint_state_publisher_gui',
+        #     node_name='joint_state_publisher_gui',
+        #     arguments=[urdf_path],
+        #     parameters=[{'use_gui': use_gui}],
+        #     output='screen'),
 
         Node(
             package='robot_state_publisher',
