@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/k3lso_moteus/include",
+                "/opt/ros/foxy/include",
+                "${workspaceFolder}/../../install/k3lso_msgs/include/"
+            ],
+            "defines": []
+        }
+    ],
+    "version": 4
+}

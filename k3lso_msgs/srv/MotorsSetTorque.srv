@@ -1,0 +1,6 @@
+int32[] ids
+string[] joint_names
+bool[] state
+---
+int32 error
+string error_str

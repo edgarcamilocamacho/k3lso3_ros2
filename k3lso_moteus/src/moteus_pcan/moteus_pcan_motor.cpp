@@ -40,7 +40,7 @@ MoteusPcanMotor::MoteusPcanMotor(uint32_t id, PCANDevice* can_device_ptr)
     // Write command
     _msg_tx_pos.data[3] = 0x0C; // Write floats
     _msg_tx_pos.data[4] = 0x06; // Write 6 registers
-    _msg_tx_pos.data[5] = 0x20; // Starting register: POSITION_COMM, velocityCOMM, fftorqueCOMM, KP_SCALE, KD_SCALE, MAX_TORQUE
+    _msg_tx_pos.data[5] = 0x20; // Starting register: positionCOMM, velocityCOMM, fftorqueCOMM, KP_SCALE, KD_SCALE, MAX_TORQUE
     // Query
     _msg_tx_pos.data[30] = 0x1F; // Read floats (0x1C) | Read 3 registers (0x03)
     _msg_tx_pos.data[31] = 0x01; // Starting register: POSITION, VELOCITY, TORQUE
@@ -65,37 +65,39 @@ void MoteusPcanMotor::set_commands(float position, float velocity, float fftorqu
     _comm_kd_scale = kd_scale;
 }
 
-void MoteusPcanMotor::set_commands(float position_, float velocity, float fftorque){
+void MoteusPcanMotor::set_commands(float position, float velocity, float fftorque){
     std::lock_guard<std::mutex> guard(_command_mutex);
-    _comm_position = position_;
+    _comm_position = position;
     _comm_velocity = velocity;
     _comm_fftorque = fftorque;
 }
 
-void MoteusPcanMotor::set_commands(float position_, float velocity){
+void MoteusPcanMotor::set_commands(float position, float velocity){
     std::lock_guard<std::mutex> guard(_command_mutex);
-    _comm_position = position_;
+    _comm_position = position;
     _comm_velocity = velocity;
 }
 
-void MoteusPcanMotor::set_commands(float position_){
+void MoteusPcanMotor::set_commands(float position){
     std::lock_guard<std::mutex> guard(_command_mutex);
-    _comm_position = position_;
+    _comm_position = position;
 }
 
-void MoteusPcanMotor::get_feedback(float& position_, float& velocity, float& torque_){
+void MoteusPcanMotor::get_feedback(float& position, float& velocity, float& torque){
     std::lock_guard<std::mutex> guard(_feedback_mutex);
-    position_ = _position;   
+    position = _position;   
     velocity = _velocity;
-    torque_ = _torque;
+    torque = _torque;
 }
 
-void MoteusPcanMotor::set_torque_ena(bool torque_ena_){
+void MoteusPcanMotor::set_torque_ena(bool torque_ena){
     std::lock_guard<std::mutex> guard(_torque_ena_mutex);
-    if(!torque_ena_){
+    if(!torque_ena){ // DISABLE torque
+        std::cout << "Motor " << _id << ", torque disabled" << std::endl;
         _torque_ena = false;
-    }else{
-        if(!_torque_ena){
+    }else{ // ENABLE torque
+        std::cout << "Motor " << _id << ", torque enabled" << std::endl;
+        if(!_torque_ena){ // Torque is disabled before changing
             std::lock_guard<std::mutex> guard1(_command_mutex);
             std::lock_guard<std::mutex> guard2(_feedback_mutex);
             _comm_position = _position;

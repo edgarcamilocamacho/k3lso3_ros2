@@ -17,6 +17,7 @@ find_package(sensor_msgs REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/MotorsCommand.msg"
   "srv/MotorsStep.srv"
+  "srv/MotorsSetTorque.srv"
   DEPENDENCIES std_msgs sensor_msgs
  )
 
