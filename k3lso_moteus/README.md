@@ -2,6 +2,12 @@
 
 **K3lso moteus controllers package**
 
+Based on (find the original moteus lib)
+
+## Dependencies
+
+Install pcandriver and pcanbasic: https://github.com/raess1/K3lso-CAN-communication
+
 ## Executions
 
 * **Main Moteus interface node**:

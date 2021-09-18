@@ -11,7 +11,18 @@ Tested with:
 * [k3lso_vectornav](https://github.com/edgarcamilocamacho/k3lso3_ros2/tree/master/k3lso_vectornav)
 * [k3lso_moteus](https://github.com/edgarcamilocamacho/k3lso3_ros2/tree/master/k3lso_moteus)
 
-## Installation
+## K3lso Robot
 
+High level launch files are in the `k3lso_robot` package.
 
+### Launch the fake joints and Rviz
 
+``` bash
+ros2 launch k3lso_robot k3lso_rviz_fake.launch.py
+```
+
+### Monitor joints in rviz
+
+``` bash
+ros2 launch k3lso_robot k3lso_rviz_monitor.launch.py
+```

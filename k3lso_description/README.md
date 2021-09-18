@@ -8,6 +8,12 @@
 *  *k3lso_v2*: k3lso with strange joints orientation (used on the robot-gym repo).
 * *ghost*: test quadruped of the robot-gym repo.
 
+## Dependencies
+
+``` bash
+sudo apt-get install ros-foxy-joint-state-publisher-gui
+```
+
 ## Executions
 
 * **Fake joints and rviz visualization**:

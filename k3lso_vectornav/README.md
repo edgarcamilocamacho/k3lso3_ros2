@@ -10,6 +10,8 @@
 ros2 run k3lso_vectornav k3lso_vectornav
 ```
 
+> NOTE: If you get TIMEOUT, suspend and wake up the robot.
+
 Check `/imu` freq:
 
 ``` bash
