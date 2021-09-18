@@ -106,7 +106,7 @@ void MoteusPcanMotor::set_torque_ena(bool torque_ena){
     }
 }
 
-void MoteusPcanMotor::write_read(){
+bool MoteusPcanMotor::write_read(){
     bool toque_local;
     {
         std::lock_guard<std::mutex> guard(_torque_ena_mutex);
@@ -116,7 +116,7 @@ void MoteusPcanMotor::write_read(){
         // WRITE
         if(!toque_local){
             #ifdef PRINT_TX
-                if(_id==6) print_message(_msg_tx_stop);
+                print_message(_msg_tx_stop);
             #endif
             #ifdef USE_PCAN
                 _can_device_ptr->Send(_msg_tx_stop);
@@ -132,7 +132,7 @@ void MoteusPcanMotor::write_read(){
                 memcpy(&_msg_tx_pos.data[MSGTX_ADDR_MAXTORQU], &_comm_maxtorqu, sizeof(float));
             }
             #ifdef PRINT_TX
-                if(_id==6) print_message(_msg_tx_pos);
+                print_message(_msg_tx_pos);
             #endif
             #ifdef USE_PCAN
                 _can_device_ptr->Send(_msg_tx_pos);
@@ -142,7 +142,9 @@ void MoteusPcanMotor::write_read(){
         }
         // READ
         #ifdef USE_PCAN
-            while(!_can_device_ptr->Receive(_msg_rx));
+            if(!_can_device_ptr->Receive(_msg_rx)){
+                return false;
+            }
         #else
             std::this_thread::sleep_for(10ms);
         #endif
@@ -159,4 +161,5 @@ void MoteusPcanMotor::write_read(){
         std::this_thread::sleep_for(20ms);
         _position = _comm_position;
     #endif
+    return true;
 }

@@ -22,9 +22,6 @@ MoteusPcanController::MoteusPcanController(const MoteusInterfaceMotorsMap& inter
         }
     }
     _initialized = true;
-    for(const auto& interface: _interfaces){
-        interface->start();
-    }
     return;
 }
 
@@ -36,6 +33,12 @@ MoteusPcanController::~MoteusPcanController(){
 
 bool MoteusPcanController::is_initialized(){
     return _initialized;
+}
+
+void MoteusPcanController::start(){
+    for(const auto& interface: _interfaces){
+        interface->start();
+    }
 }
 
 bool MoteusPcanController::set_torque_ena(bool torque_ena){
@@ -163,4 +166,13 @@ std::vector<int> MoteusPcanController::get_freqs(){
         freqs.push_back(interface->_freq);
     }
     return freqs;
+}
+
+bool MoteusPcanController::all_running(){
+    for(const auto& interface: _interfaces){
+        if(!interface->is_running()){
+            return false;
+        }
+    }
+    return true;
 }

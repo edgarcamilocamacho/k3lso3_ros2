@@ -3,6 +3,7 @@
 MoteusPcanInterface::MoteusPcanInterface(const std::string& interface, const std::vector<int>& ids)
     : _initialized(false)
     , _running(false)
+    , _fail_count(0)
     , _interface(interface)
     , _freq_counter(0)
 {
@@ -36,6 +37,11 @@ bool MoteusPcanInterface::is_initialized(){
     return _initialized;
 }
 
+bool MoteusPcanInterface::is_running(){
+    std::lock_guard<std::mutex> guard(_running_mutex);
+    return _running;
+}
+
 void MoteusPcanInterface::start(){
     {
         std::lock_guard<std::mutex> guard(_running_mutex);
@@ -50,8 +56,21 @@ void MoteusPcanInterface::start(){
 void MoteusPcanInterface::loop(){
     while(true){
         for(const auto& [id, motor]: _motors){
-            motor->write_read();
+            if(!motor->write_read()){
+                _fail_count++;
+            }else{
+                _fail_count=0;
+            }
             // std::this_thread::sleep_for(std::chrono::microseconds(1));
+        }
+        if(_fail_count>=3){
+            std::lock_guard<std::mutex> guard(_running_mutex);
+            _running = false;
+            std::cerr << "Interface '" << _interface << "' failed, one of its motors is not responding." << std::endl;
+            for(const auto& [id, motor]: _motors){
+                std::cerr << "  - Motor " << id << std::endl;
+            }
+            break;
         }
         {
             std::lock_guard<std::mutex> guard(_running_mutex);

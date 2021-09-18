@@ -17,6 +17,7 @@ public:
     MoteusPcanInterface(const std::string& interface, const std::vector<int>& ids);
     ~MoteusPcanInterface();
     bool is_initialized();
+    bool is_running();
     void start();
     void stop();
 
@@ -25,6 +26,7 @@ public:
 private:
     bool _initialized;
     bool _running;
+    int _fail_count;
     std::mutex _running_mutex;
     std::string _interface;
     PCANDevice _can_device;

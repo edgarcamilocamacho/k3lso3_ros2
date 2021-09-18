@@ -159,7 +159,13 @@ int main(int argc, char **argv)
                         node->create_service<k3lso_msgs::srv::MotorsSetTorque>("/k3lso_moteus/set_torque", &set_torque_callback);
 
     RCLCPP_INFO(node->get_logger(), "Node running.");
+    controller.start();
+    
     while(rclcpp::ok()){
+        if(!controller.all_running()){
+            RCLCPP_FATAL(node->get_logger(), "Moteus controller stopped working.");
+            break;
+        }
         rclcpp::spin_some(node);
     }
 

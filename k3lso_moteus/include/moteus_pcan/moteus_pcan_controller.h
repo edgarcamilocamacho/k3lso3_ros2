@@ -17,6 +17,8 @@ public:
     MoteusPcanController(const MoteusInterfaceMotorsMap& interface_motors_map);
     ~MoteusPcanController();
     bool is_initialized();
+    void start();
+    bool all_running();
 
     bool set_torque_ena(bool torque_ena);
     bool set_torque_ena(bool torque_ena, int id);

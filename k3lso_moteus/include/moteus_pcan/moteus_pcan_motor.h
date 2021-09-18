@@ -14,7 +14,7 @@ class MoteusPcanMotor{
 public:
     MoteusPcanMotor(uint32_t id, PCANDevice* can_device_ptr);
     ~MoteusPcanMotor();
-    void write_read();
+    bool write_read();
     void set_commands(float position, float velocity, float fftorque, float kp_scale, float kd_scale);
     void set_commands(float position, float velocity, float fftorque);
     void set_commands(float position, float velocity);
