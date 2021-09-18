@@ -68,7 +68,7 @@ void timer_joint_states_callback(){
     for(const auto& motor_info: motors_info){
         int motor_id = motor_info.can_id;
         float pos, vel, tor;
-        controller.motors[motor_id]->get_feedback(pos, vel, tor);
+        controller._motors[motor_id]->get_feedback(pos, vel, tor);
         if(!motor_info.invert){
             msg.position.push_back((-6.28319*pos) - motor_info.offset);
         }else{

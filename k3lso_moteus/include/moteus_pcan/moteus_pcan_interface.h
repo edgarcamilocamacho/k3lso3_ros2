@@ -20,19 +20,19 @@ public:
     void start();
     void stop();
 
-    std::map<int, MoteusPcanMotorPtr> motors;
-    int freq;
+    std::map<int, MoteusPcanMotorPtr> _motors;
+    int _freq;
 private:
-    bool initialized;
-    bool running;
-    std::mutex running_mutex;
-    std::string interface;
-    PCANDevice can_device;
-    CANDevice::Config_t can_config;
-    std::shared_ptr<std::thread> loop_thread;
-    std::shared_ptr<std::thread> status_loop_thread;
-    int freq_counter;
-    std::mutex freq_counter_mutex;
+    bool _initialized;
+    bool _running;
+    std::mutex _running_mutex;
+    std::string _interface;
+    PCANDevice _can_device;
+    CANDevice::Config_t _can_config;
+    std::shared_ptr<std::thread> _loop_thread;
+    std::shared_ptr<std::thread> _status_loop_thread;
+    int _freq_counter;
+    std::mutex _freq_counter_mutex;
 
     void loop();
     void status_loop();

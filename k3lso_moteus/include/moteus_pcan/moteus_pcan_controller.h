@@ -32,11 +32,11 @@ public:
     bool set_command(std::vector<int> ids, std::vector<float> position);
 
     std::vector<int> get_freqs();
-    std::map<int, MoteusPcanMotorPtr> motors; // Volver privado de nuevo
+    std::map<int, MoteusPcanMotorPtr> _motors; // Volver privado de nuevo
 private:
-    bool initialized;
-    MoteusInterfaceMotorsMap interface_motors_map;
-    std::vector<MoteusPcanInterfacePtr> interfaces;
+    bool _initialized;
+    MoteusInterfaceMotorsMap _interface_motors_map;
+    std::vector<MoteusPcanInterfacePtr> _interfaces;
 };
 
 #endif

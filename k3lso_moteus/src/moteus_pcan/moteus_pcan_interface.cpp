@@ -1,67 +1,67 @@
 #include "moteus_pcan/moteus_pcan_interface.h"
 
 MoteusPcanInterface::MoteusPcanInterface(const std::string& interface, const std::vector<int>& ids)
-    : initialized(false)
-    , running(false)
-    , interface(interface)
-    , freq_counter(0)
+    : _initialized(false)
+    , _running(false)
+    , _interface(interface)
+    , _freq_counter(0)
 {
     // CAN Configuration
-    can_config.bitrate = 1e6; //1mbps
-    can_config.d_bitrate = 2e6; //2mbps
-    can_config.sample_point = .875; //87.5% 
-    can_config.d_sample_point = 0.8; //60%
-    can_config.clock_freq = 80e6; // 80mhz // Read from driver?  
-    can_config.mode_fd = 1; // FD Mode
+    _can_config.bitrate = 1e6; //1mbps
+    _can_config.d_bitrate = 2e6; //2mbps
+    _can_config.sample_point = .875; //87.5% 
+    _can_config.d_sample_point = 0.8; //60%
+    _can_config.clock_freq = 80e6; // 80mhz // Read from driver?  
+    _can_config.mode_fd = 1; // FD Mode
 #ifdef USE_PCAN
     // Open CAN
-    if(!can_device.Open(interface, can_config, false))
+    if(!_can_device.Open(interface, _can_config, false))
     {
         return;
     }
-    can_device.ClearFilters();
+    _can_device.ClearFilters();
 #endif
     // Motors
     for(const auto& id: ids){
-        motors[id] = std::make_shared<MoteusPcanMotor>(id, &can_device);
+        _motors[id] = std::make_shared<MoteusPcanMotor>(id, &_can_device);
     }
     // Everything ok
-    initialized = true;
+    _initialized = true;
     return;
 }
 
 MoteusPcanInterface::~MoteusPcanInterface(){}
 
 bool MoteusPcanInterface::is_initialized(){
-    return initialized;
+    return _initialized;
 }
 
 void MoteusPcanInterface::start(){
     {
-        std::lock_guard<std::mutex> guard(running_mutex);
-        running = true;
+        std::lock_guard<std::mutex> guard(_running_mutex);
+        _running = true;
     }
-    if(initialized){
-        loop_thread = std::make_shared<std::thread>(&MoteusPcanInterface::loop, this);
-        status_loop_thread = std::make_shared<std::thread>(&MoteusPcanInterface::status_loop, this);
+    if(_initialized){
+        _loop_thread = std::make_shared<std::thread>(&MoteusPcanInterface::loop, this);
+        _status_loop_thread = std::make_shared<std::thread>(&MoteusPcanInterface::status_loop, this);
     }
 }
 
 void MoteusPcanInterface::loop(){
     while(true){
-        for(const auto& [id, motor]: motors){
+        for(const auto& [id, motor]: _motors){
             motor->write_read();
             // std::this_thread::sleep_for(std::chrono::microseconds(1));
         }
         {
-            std::lock_guard<std::mutex> guard(running_mutex);
-            if(!running){
+            std::lock_guard<std::mutex> guard(_running_mutex);
+            if(!_running){
                 break;
             }
         }
         {
-            std::lock_guard<std::mutex> guard(freq_counter_mutex);
-            freq_counter++;
+            std::lock_guard<std::mutex> guard(_freq_counter_mutex);
+            _freq_counter++;
         }
     }
 }
@@ -70,23 +70,23 @@ void MoteusPcanInterface::status_loop(){
     while(true){
         for(int i=0; i<10; i++){
             std::this_thread::sleep_for(std::chrono::milliseconds(100));
-            if(!running){
+            if(!_running){
                 return;
             }
         }
         {
-            std::lock_guard<std::mutex> guard(freq_counter_mutex);
-            freq = freq_counter;
-            freq_counter = 0;
+            std::lock_guard<std::mutex> guard(_freq_counter_mutex);
+            _freq = _freq_counter;
+            _freq_counter = 0;
         }
     }
 }
 
 void MoteusPcanInterface::stop(){
     {
-        std::lock_guard<std::mutex> guard(running_mutex);
-        running = false;
+        std::lock_guard<std::mutex> guard(_running_mutex);
+        _running = false;
     }
-    loop_thread->join();
-    status_loop_thread->join();
+    _loop_thread->join();
+    _status_loop_thread->join();
 }
