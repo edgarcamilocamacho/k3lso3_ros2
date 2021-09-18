@@ -16,5 +16,11 @@ Install pcandriver and pcanbasic: https://github.com/raess1/K3lso-CAN-communicat
 ros2 run k3lso_moteus k3lso_moteus_node
 ```
 
+## Services
 
+Enable torque:
+
+``` bash
+ros2 service call /k3lso_moteus/set_torque k3lso_msgs/srv/MotorsSetTorque "{ids: [5, 6], joint_names: [], state: [false, true]}"
+```
 

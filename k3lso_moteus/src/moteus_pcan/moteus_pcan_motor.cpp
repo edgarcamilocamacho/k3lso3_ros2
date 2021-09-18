@@ -112,46 +112,51 @@ void MoteusPcanMotor::write_read(){
         std::lock_guard<std::mutex> guard(_torque_ena_mutex);
         toque_local = _torque_ena;
     }
-    if(!toque_local){
-        #ifdef PRINT_RX
-            print_message(msg_tx_stop);
-        #endif
-        #ifdef USE_PCAN
-            _can_device_ptr->Send(_msg_tx_stop);
-        #endif
-    }else{
-        {
-            std::lock_guard<std::mutex> guard(_command_mutex);
-            memcpy(&_msg_tx_pos.data[MSGTX_ADDR_POSITION], &_comm_position, sizeof(float));
-            memcpy(&_msg_tx_pos.data[MSGTX_ADDR_VELOCITY], &_comm_velocity, sizeof(float));
-            memcpy(&_msg_tx_pos.data[MSGTX_ADDR_FFTORQUE], &_comm_fftorque, sizeof(float));
-            memcpy(&_msg_tx_pos.data[MSGTX_ADDR_KP_SCALE], &_comm_kp_scale, sizeof(float));
-            memcpy(&_msg_tx_pos.data[MSGTX_ADDR_KD_SCALE], &_comm_kd_scale, sizeof(float));
-            memcpy(&_msg_tx_pos.data[MSGTX_ADDR_MAXTORQU], &_comm_maxtorqu, sizeof(float));
+    #ifndef SIMULATE
+        // WRITE
+        if(!toque_local){
+            #ifdef PRINT_TX
+                if(_id==6) print_message(_msg_tx_stop);
+            #endif
+            #ifdef USE_PCAN
+                _can_device_ptr->Send(_msg_tx_stop);
+            #endif
+        }else{
+            {
+                std::lock_guard<std::mutex> guard(_command_mutex);
+                memcpy(&_msg_tx_pos.data[MSGTX_ADDR_POSITION], &_comm_position, sizeof(float));
+                memcpy(&_msg_tx_pos.data[MSGTX_ADDR_VELOCITY], &_comm_velocity, sizeof(float));
+                memcpy(&_msg_tx_pos.data[MSGTX_ADDR_FFTORQUE], &_comm_fftorque, sizeof(float));
+                memcpy(&_msg_tx_pos.data[MSGTX_ADDR_KP_SCALE], &_comm_kp_scale, sizeof(float));
+                memcpy(&_msg_tx_pos.data[MSGTX_ADDR_KD_SCALE], &_comm_kd_scale, sizeof(float));
+                memcpy(&_msg_tx_pos.data[MSGTX_ADDR_MAXTORQU], &_comm_maxtorqu, sizeof(float));
+            }
+            #ifdef PRINT_TX
+                if(_id==6) print_message(_msg_tx_pos);
+            #endif
+            #ifdef USE_PCAN
+                _can_device_ptr->Send(_msg_tx_pos);
+            #else
+                std::this_thread::sleep_for(10ms);
+            #endif
         }
-        #ifdef PRINT_TX
-            print_message(msg_tx_pos);
-        #endif
+        // READ
         #ifdef USE_PCAN
-            // float pos = *((float*)(&msg_tx_pos.data[MSGTX_ADDR_POSITION]));
-            // std::cout << pos << std::endl;
-            _can_device_ptr->Send(_msg_tx_pos);
+            while(!_can_device_ptr->Receive(_msg_rx));
         #else
             std::this_thread::sleep_for(10ms);
         #endif
-    }
-    #ifdef USE_PCAN
-        while(!_can_device_ptr->Receive(_msg_rx));
+        #ifdef PRINT_RX
+            print_message(msg_rx);
+        #endif
+        {
+            std::lock_guard<std::mutex> guard(_feedback_mutex);
+            memcpy(&_position, &_msg_rx.data[MSGRX_ADDR_POSITION], sizeof(float));
+            memcpy(&_velocity, &_msg_rx.data[MSGRX_ADDR_VELOCITY], sizeof(float));
+            memcpy(&_torque,   &_msg_rx.data[MSGRX_ADDR_TORQUE],   sizeof(float));
+        }
     #else
-        std::this_thread::sleep_for(10ms);
+        std::this_thread::sleep_for(20ms);
+        _position = _comm_position;
     #endif
-    #ifdef PRINT_RX
-        print_message(msg_rx);
-    #endif
-    {
-        std::lock_guard<std::mutex> guard(_feedback_mutex);
-        memcpy(&_position, &_msg_rx.data[MSGRX_ADDR_POSITION], sizeof(float));
-        memcpy(&_velocity, &_msg_rx.data[MSGRX_ADDR_VELOCITY], sizeof(float));
-        memcpy(&_torque,   &_msg_rx.data[MSGRX_ADDR_TORQUE],   sizeof(float));
-    }
 }
